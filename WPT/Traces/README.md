@@ -11,3 +11,7 @@ D-Boot.10-31-2020.00-34-44.Boot_1.etl - Can you find why this computer took too 
 USBOS_PF_SSD_BOOT2.etl - Can you find why this computer took too long to boot?
 
 CaseOfThe30SecondFileExplorer.etl - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
+
+I9.09-16-2021.23-11-33_high_kernel_cpu.etl - Can you find the reason for high Kernel CPU usage?
+
+I9.05-29-2018.22-57-04-WillNotShutdown.Shutdown_1.etl - Can you find out why Windows took too long to shutdown?
