@@ -9,3 +9,5 @@ Create_100files_15625msTimer_1count.03-06-2020.13-07-58.etl - 100 files were bei
 D-Boot.10-31-2020.00-34-44.Boot_1.etl - Can you find why this computer took too long to boot?
 
 USBOS_PF_SSD_BOOT2.etl - Can you find why this computer took too long to boot?
+
+CaseOfThe30SecondFileExplorer.etl - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
