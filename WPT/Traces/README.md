@@ -20,4 +20,4 @@ If you would like to comment your findings use the "**Issues**" tab and create a
 
 - **Trace.06-26-2015.15-36-19.Boot_1.etl** - Can you find the 2 issues with slow Windows boot and login performance?
 
-_ **DiskIOHigh.etl** - Can you find out why the Disk/s were very utilized in this trace?
+- **DiskIOHigh.etl** - Can you find out why the Disk/s were very utilized in this trace?
