@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WpaProfileContainer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2" xmlns="http://tempuri.org/SerializableElement.xsd">
+  <Content xsi:type="WpaProfile2">
+    <Sessions>
+      <Session Index="0">
+        <FileReferences />
+      </Session>
+    </Sessions>
+    <Views>
+      <SysConfigView Guid="acf1daaa-ddf7-47d0-84f5-4770a033dc77" IsVisible="true" SessionIndex="0" />
+      <View Guid="2516286d-e732-4664-9d63-febd92f72cf3" IsVisible="true" Title="Trace Description">
+        <Graphs>
+          <Graph Guid="ec60ccb2-4409-444e-98fa-792c5b3c36da" LayoutStyle="All" Color="#FF005DE0" GraphHeight="38" IsMinimized="false" IsShown="true" IsExpanded="false">
+            <Preset Name="Grouped By Mark" BarGraphIntervalCount="50" IsThreadActivityTable="false" GraphColumnCount="14" KeyColumnCount="1" LeftFrozenColumnCount="2" RightFrozenColumnCount="13" InitialFilterShouldKeep="true" GraphFilterTopValue="0" GraphFilterThresholdValue="0">
+              <MetadataEntries>
+                <MetadataEntry Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" ColumnMetadata="StartTime" />
+                <MetadataEntry Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" ColumnMetadata="EndTime" />
+              </MetadataEntries>
+              <HighlightEntries />
+              <Columns>
+                <Column Guid="d65b6c83-2625-591b-1484-8980c43b5c15" Name="Mark" SortOrder="Ascending" SortPriority="1" Width="1193" IsVisible="true" />
+                <Column Guid="cb796d44-2927-5ac1-d231-4b71904c18f5" Name="Thread Name" SortPriority="2" Width="80" IsVisible="false" />
+                <Column Guid="82ddfdff-ee93-5f35-08ac-4705069618dc" Name="Thread Activity Tag" SortPriority="3" Width="80" IsVisible="false" />
+                <Column Guid="2818954f-2d30-5569-4510-dade0a5a605c" Name="Annotation" SortPriority="4" Width="80" IsVisible="false">
+                  <AnnotationsOptionsParameter>
+                    <AnnotationQueryEntries />
+                  </AnnotationsOptionsParameter>
+                </Column>
+                <Column Guid="c437109b-016b-5bd7-ced3-54eefde15a9a" Name="Count" AggregationMode="Count" SortPriority="11" TextAlignment="Right" Width="80" IsVisible="true" />
+                <Column Guid="99748ec1-b3e6-5ffa-3cc7-e462ccdf2246" Name="Process Name" SortPriority="5" Width="196" IsVisible="false" />
+                <Column Guid="45f9f4c9-14d2-5a26-978e-827fe881d522" Name="Process" SortPriority="6" Width="83" IsVisible="true" />
+                <Column Guid="9674de60-3cda-5315-7836-aeb9918390ab" Name="ThreadId" SortPriority="7" TextAlignment="Right" Width="80" IsVisible="true" />
+                <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack Tag" SortPriority="8" Width="216" IsVisible="false">
+                  <StackOptionsParameter Mode="StackTag" />
+                </Column>
+                <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack (Frame Tags)" SortPriority="9" Width="216" IsVisible="false">
+                  <StackOptionsParameter Mode="FrameTags" />
+                </Column>
+                <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack" SortPriority="10" Width="216" IsVisible="false">
+                  <StackOptionsParameter />
+                </Column>
+                <Column Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" SortOrder="Ascending" SortPriority="0" TextAlignment="Right" Width="133" IsVisible="true">
+                  <DateTimeTimestampOptionsParameter DateTimeEnabled="false" />
+                </Column>
+              </Columns>
+            </Preset>
+          </Graph>
+        </Graphs>
+        <SessionIndices>
+          <SessionIndex>0</SessionIndex>
+        </SessionIndices>
+      </View>
+    </Views>
+    <ModifiedGraphs>
+      <GraphSchema Guid="ec60ccb2-4409-444e-98fa-792c5b3c36da">
+        <ModifiedPresets />
+        <PersistedPresets>
+          <Preset Name="Grouped By Mark" BarGraphIntervalCount="50" IsThreadActivityTable="false" GraphColumnCount="14" KeyColumnCount="1" LeftFrozenColumnCount="2" RightFrozenColumnCount="13" InitialFilterShouldKeep="true" GraphFilterTopValue="0" GraphFilterThresholdValue="0">
+            <MetadataEntries>
+              <MetadataEntry Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" ColumnMetadata="StartTime" />
+              <MetadataEntry Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" ColumnMetadata="EndTime" />
+            </MetadataEntries>
+            <HighlightEntries />
+            <Columns>
+              <Column Guid="d65b6c83-2625-591b-1484-8980c43b5c15" Name="Mark" SortOrder="Ascending" SortPriority="1" Width="1193" IsVisible="true" />
+              <Column Guid="cb796d44-2927-5ac1-d231-4b71904c18f5" Name="Thread Name" SortPriority="2" Width="80" IsVisible="false" />
+              <Column Guid="82ddfdff-ee93-5f35-08ac-4705069618dc" Name="Thread Activity Tag" SortPriority="3" Width="80" IsVisible="false" />
+              <Column Guid="2818954f-2d30-5569-4510-dade0a5a605c" Name="Annotation" SortPriority="4" Width="80" IsVisible="false">
+                <AnnotationsOptionsParameter>
+                  <AnnotationQueryEntries />
+                </AnnotationsOptionsParameter>
+              </Column>
+              <Column Guid="c437109b-016b-5bd7-ced3-54eefde15a9a" Name="Count" AggregationMode="Count" SortPriority="11" TextAlignment="Right" Width="80" IsVisible="true" />
+              <Column Guid="99748ec1-b3e6-5ffa-3cc7-e462ccdf2246" Name="Process Name" SortPriority="5" Width="196" IsVisible="false" />
+              <Column Guid="45f9f4c9-14d2-5a26-978e-827fe881d522" Name="Process" SortPriority="6" Width="83" IsVisible="true" />
+              <Column Guid="9674de60-3cda-5315-7836-aeb9918390ab" Name="ThreadId" SortPriority="7" TextAlignment="Right" Width="80" IsVisible="true" />
+              <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack Tag" SortPriority="8" Width="216" IsVisible="false">
+                <StackOptionsParameter Mode="StackTag" />
+              </Column>
+              <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack (Frame Tags)" SortPriority="9" Width="216" IsVisible="false">
+                <StackOptionsParameter Mode="FrameTags" />
+              </Column>
+              <Column Guid="8fb7a46f-7806-57d5-358e-5bd84ca2afd6" Name="Stack" SortPriority="10" Width="216" IsVisible="false">
+                <StackOptionsParameter />
+              </Column>
+              <Column Guid="46ade377-978f-5dca-8827-9c083f015d90" Name="Time" SortOrder="Ascending" SortPriority="0" TextAlignment="Right" Width="133" IsVisible="true">
+                <DateTimeTimestampOptionsParameter DateTimeEnabled="false" />
+              </Column>
+            </Columns>
+          </Preset>
+        </PersistedPresets>
+      </GraphSchema>
+    </ModifiedGraphs>
+  </Content>
+</WpaProfileContainer>
