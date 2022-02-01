@@ -4,7 +4,7 @@ Various Windows Performance files examples
 
 <https://1drv.ms/u/s!AuY3A9qpvso6lfMpVPV408UDaAaMdQ?e=wkeaSR>
 
-If you would like to comment your findings use the "**Issues**" tab and create a new issue with the "**Question**" tag.
+If you would like to comment your findings use the "**Issues**" tab and create a new issue with the "**answer key**" tag.
 
 - **Create_100files_15625msTimer_1count.03-06-2020.13-07-58.etl** - 100 files were being created. Can you find the issue with disk performance in this trace?
 

@@ -2,7 +2,7 @@
 
 Various Windows Performance files, settings and documents
 
-- **/WPT/Traces** - Link to public example traces for learning purposes.
+- **/WPT/Traces** - Link to public example traces for learning purposes. See 'Issues' tab for answer analysis of traces. Don't peek, try to solve first. :)
 
 - **/Perfmon** - Performance Monitor template files and Logman/tools commands.
 
