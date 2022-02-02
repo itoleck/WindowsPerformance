@@ -4,9 +4,9 @@ Various Windows Performance files examples
 
 <https://1drv.ms/u/s!AuY3A9qpvso6lfMpVPV408UDaAaMdQ?e=wkeaSR>
 
-If you would like to comment your findings use the "**Issues**" tab and create a new issue with the "**answer key**" tag.
+If you would like to comment your findings use the (<https://github.com/itoleck/WindowsPerformance/issues>) tab and create a new issue with the "**question**" tag. Walk-throughs are available in the Issues tab with the **answer key** tag.
 
-- **Create_100files_15625msTimer_1count.03-06-2020.13-07-58.etl** - 100 files were being created. Can you find the issue with disk performance in this trace?
+- **Create_100files.etl** - 100 files were being created. Can you find the issue with disk performance in this trace?
 
 - **D-Boot.10-31-2020.00-34-44.Boot_1.etl** - Can you find why this computer took too long to boot?
 
