@@ -1,0 +1,62 @@
+Version = 1
+
+BEGIN_RULE
+BEGIN_FILTER_TEXT
+FrameVariable.TimeDelta >= 10000000
+END_FILTER_TEXT
+	Active = 1
+	Foreground = 0, 0, 0
+	Background = 255, 0, 0
+	Bold = 0
+	Italic = 0
+	Underline = 0
+END_RULE
+
+BEGIN_RULE
+BEGIN_FILTER_TEXT
+FrameVariable.TimeDelta >= 5000000
+END_FILTER_TEXT
+	Active = 1
+	Foreground = 0, 0, 0
+	Background = 255, 128, 0
+	Bold = 0
+	Italic = 0
+	Underline = 0
+END_RULE
+
+BEGIN_RULE
+BEGIN_FILTER_TEXT
+FrameVariable.TimeDelta >= 2000000
+END_FILTER_TEXT
+	Active = 1
+	Foreground = 0, 0, 0
+	Background = 255, 255, 0
+	Bold = 0
+	Italic = 0
+	Underline = 0
+END_RULE
+
+BEGIN_RULE
+BEGIN_FILTER_TEXT
+TCPFlags == "...A.R.."
+END_FILTER_TEXT
+	Active = 1
+	Foreground = 0, 0, 0
+	Background = 128, 128, 255
+	Bold = 0
+	Italic = 0
+	Underline = 0
+END_RULE
+
+BEGIN_RULE
+BEGIN_FILTER_TEXT
+TCPFlags == ".....R.."
+END_FILTER_TEXT
+	Active = 1
+	Foreground = 0, 0, 0
+	Background = 128, 128, 192
+	Bold = 0
+	Italic = 0
+	Underline = 0
+END_RULE
+
