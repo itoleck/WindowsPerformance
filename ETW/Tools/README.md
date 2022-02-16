@@ -23,19 +23,3 @@ Performance HUD <https://www.microsoft.com/en-us/download/100813> - A real-time 
 <https://github.com/gcpartners/ETLParser> - parse ETL files
 
 <https://github.com/lowleveldesign/wtrace> - FileIO for a process
-
-## Blogs and Links for Windows Performance
-
-<https://www.chadschultz.com> - Since this is my Github, I go first ;)
-
-<https://devblogs.microsoft.com/performance-diagnostics/tag/windows-performance-toolkit/>
-
-<https://yongrhee.wordpress.com/>
-
-<https://twitter.com/WindowsPerf>
-
-<https://randomascii.wordpress.com/>
-
-WPR - <https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-recorder>
-
-WPA - <https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-analyzer>

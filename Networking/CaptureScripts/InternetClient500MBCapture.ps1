@@ -19,4 +19,8 @@ If (!(Test-Path "$env:USERPROFILE\Downloads\etl2pcapng\x64\etl2pcapng.exe")) {
 
 Write-Host "Starting automatic conversion of network trace from .etl to .pcapng for WireShark analysis."
 Write-Host ".etl file can also be opened in Event Viewer, WPA, Network Monitor or other tools for ETW event analysis."
+
 Start-Process -FilePath "$env:USERPROFILE\Downloads\etl2pcapng\x64\etl2pcapng.exe" -ArgumentList "$env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.etl $env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.pcapng"
+
+Write-Host "Automatically start WireShark and Load trace"
+Start-Process -FilePath "$env:ProgramFiles\WireShark\WireShark.exe" -ArgumentList "$env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.pcapng"

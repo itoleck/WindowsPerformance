@@ -1,6 +1,6 @@
 #requires –RunAsAdministrator
 
-Write-Host "Start 500MB circular capture. Press a key to save capture. Capture will not automatically start after reboot."
+Write-Host "Start 500MB circular capture. Press a key to save capture. Capture will NOT automatically start after reboot."
 Netsh trace start capture=yes
 pause
 Write-Host "Stopping and merging capture. This may take a few moments."
@@ -19,3 +19,6 @@ If (!(Test-Path "$env:USERPROFILE\Downloads\etl2pcapng\x64\etl2pcapng.exe")) {
 
 Write-Host "Starting automatic conversion of network trace from .etl to .pcapng for WireShark analysis."
 Start-Process -FilePath "$env:USERPROFILE\Downloads\etl2pcapng\x64\etl2pcapng.exe" -ArgumentList "$env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.etl $env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.pcapng"
+
+Write-Host "Automatically start WireShark and Load trace"
+Start-Process -FilePath "$env:ProgramFiles\WireShark\WireShark.exe" -ArgumentList "$env:USERPROFILE\AppData\Local\Temp\NetTraces\NetTrace.pcapng"
