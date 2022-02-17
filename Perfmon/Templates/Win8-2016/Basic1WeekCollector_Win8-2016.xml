@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-16"?>
 <DataCollectorSet>
 	<Status>0</Status>
-	<Duration>0</Duration>
+	<Duration>604800</Duration>
 	<Description>Collect basic counters that will be about 1,000 datapoints in a week.</Description>
 	<DescriptionUnresolved>Collect basic counters that will be about 1,000 datapoints in a week.</DescriptionUnresolved>
 	<DisplayName>
