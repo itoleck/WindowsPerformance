@@ -1,5 +1,11 @@
 #requires –RunAsAdministrator
 
+#2022 Chad Schultz
+#https://github.com/itoleck/WindowsPerformance
+
+#This script tries to download the etl2pcapng release from Microsoft's Github repository.
+#If Internet access is not available downlaod and copy the latest etl2pcapng.zip release to the User downloads folder.
+
 Write-Host "Start 500MB circular capture. Press a key to save capture. Capture will not automatically start after reboot."
 Netsh trace start capture=yes scenario=NDIS,WLAN,LAN,NetConnection
 pause
