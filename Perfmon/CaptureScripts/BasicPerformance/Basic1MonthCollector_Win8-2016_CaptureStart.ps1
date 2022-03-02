@@ -6,5 +6,5 @@
 #Requires -RunAsAdministrator
 
 
-logman.exe import -n Basic1WeekCollector_Win7-2012 -xml ..\Templates\Win7-2012\Basic1WeekCollector_Win7-2012.xml
-logman.exe start Basic1WeekCollector_Win7-2012
+logman.exe import -n Basic1MonthCollector_Win8-2016 -xml ..\..\Templates\Win8-2016\Basic1MonthCollector_Win8-2016.xml
+logman.exe start Basic1MonthCollector_Win8-2016

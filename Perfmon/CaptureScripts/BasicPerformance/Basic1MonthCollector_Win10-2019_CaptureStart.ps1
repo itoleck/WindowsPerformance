@@ -6,5 +6,5 @@
 #Requires -RunAsAdministrator
 
 
-logman.exe import -n Basic1WeekCollector_Win10-2019 -xml ..\Templates\Win10-2019\Basic1WeekCollector_Win10-2019.xml
-logman.exe start Basic1WeekCollector_Win10-2019
+logman.exe import -n Basic1MonthCollector_Win10-2019 -xml ..\..\Templates\Win10-2019\Basic1MonthCollector_Win10-2019.xml
+logman.exe start Basic1MonthCollector_Win10-2019

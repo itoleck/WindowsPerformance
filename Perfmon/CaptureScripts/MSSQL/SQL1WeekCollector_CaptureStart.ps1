@@ -6,5 +6,5 @@
 #Requires -RunAsAdministrator
 
 
-logman.exe import -n Basic1WeekCollector_Win8-2016 -xml ..\Templates\Win8-2016\Basic1WeekCollector_Win8-2016.xml
-logman.exe start Basic1WeekCollector_Win8-2016
+logman.exe import -n SQL1WeekCollector -xml ..\..\Templates\PAL\SQLServer_1Week_PAL_DefaultInstance.xml
+logman.exe start SQL1WeekCollector

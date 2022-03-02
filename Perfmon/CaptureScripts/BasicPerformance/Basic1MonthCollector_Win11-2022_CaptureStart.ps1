@@ -6,5 +6,5 @@
 #Requires -RunAsAdministrator
 
 
-logman.exe import -n Basic1MonthCollector_Win11-2022 -xml ..\Templates\Win11-2022\Basic1MonthCollector_Win11-2022.xml
+logman.exe import -n Basic1MonthCollector_Win11-2022 -xml ..\..\Templates\Win11-2022\Basic1MonthCollector_Win11-2022.xml
 logman.exe start Basic1MonthCollector_Win11-2022
