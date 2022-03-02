@@ -35,3 +35,5 @@ Event Viewer - Built-in Windows. View log files.
 <https://github.com/gcpartners/ETLParser> - parse ETL files
 
 <https://github.com/lowleveldesign/wtrace> - FileIO for a process
+
+<https://github.com/ryanries/ETWSplitter> - ETWSplitter, split a large .etl file into smaller files.

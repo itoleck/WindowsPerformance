@@ -14,8 +14,8 @@
 	<LatestOutputLocation>
 	</LatestOutputLocation>
 	<Name>Basic1MonthCollector</Name>
-	<OutputLocation>C:\PerfLogs\Admin\Basic1MonthCollector\Computer_20220213-000001</OutputLocation>
-	<RootPath>%systemdrive%\PerfLogs\Admin\Basic1MonthCollector</RootPath>
+	<OutputLocation>%systemdrive%\perflogs\System\Performance\Basic\Computer_20220213-000001</OutputLocation>
+	<RootPath>%systemdrive%\perflogs\System\Performance\Basic</RootPath>
 	<Segment>0</Segment>
 	<SegmentMaxDuration>0</SegmentMaxDuration>
 	<SegmentMaxSize>0</SegmentMaxSize>
