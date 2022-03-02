@@ -5,5 +5,6 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+
 logman.exe import -n Basic1MonthCollector_Win7-2012 -xml ..\Templates\Win7-2012\Basic1MonthCollector_Win7-2012.xml
 logman.exe start Basic1MonthCollector_Win7-2012

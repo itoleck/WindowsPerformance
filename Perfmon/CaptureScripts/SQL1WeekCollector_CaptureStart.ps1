@@ -5,5 +5,6 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+
 logman.exe import -n SQL1WeekCollector -xml ..\Templates\PAL\SQLServer_1Week_PAL_DefaultInstance.xml
 logman.exe start SQL1WeekCollector
