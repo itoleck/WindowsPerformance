@@ -31,3 +31,5 @@ Various Windows Performance files, settings, documents and practice traces
 WPR - <https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-recorder>
 
 WPA - <https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-analyzer>
+
+<https://leanpub.com/perfbook> - Fundamentals of Windows Performance Analysis Book (Alex Kirshenbaum and Michael Milirud)
