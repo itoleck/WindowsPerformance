@@ -2,7 +2,7 @@
 
 In most cases scripts should be ran as an administrator.
 
-These scripts may use multiple toolss to capture Event Tracing, Problem Steps, Network Traces, Process Monitor and other information.
+These scripts may use multiple tools to capture Event Tracing, Problem Steps, Network Traces, Process Monitor and other information.
 
 Other capture scripts that only rely on a single tool will be in their respective folder. (Perfmon, WPR, Xperf, Etc)
 

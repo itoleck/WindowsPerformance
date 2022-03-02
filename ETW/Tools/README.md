@@ -6,7 +6,7 @@ WPT <https://aka.ms/adk> - Windows Performance Toolkit (Windows ADK)
     WPR / WPRUI - Windows Performance Recorder
     WPA - Windows Performance Analyzer
     wpaexporter.exe - Exports Table data from trace based on a WPA profile.
-    xperf.exe / xperfview.exe(Depricated) / xbootmgr.exe
+    xperf.exe / xperfview.exe(Deprecated) / xbootmgr.exe
 
 Windows Assessment Toolkit - <https://aka.ms/adk> - Assess performance of Office and other applications.
 
