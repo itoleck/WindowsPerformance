@@ -10,4 +10,12 @@ To use the performance capture scripts use the steps below:
 
 4. Run the Capture script. i.e. (.\Basic1WeekCollector_Win11-2022_CaptureStart.ps1)
 
-Some performance captures may stop at a certian duration and some will not. You can use Perfmon GUI, Logman and other tools to view and stop the capture created by the script in needed.
+Some performance captures may stop at a certian duration and some will not. You can use Perfmon GUI, Logman and other tools to view and stop the capture created by the script if needed.
+
+## Examples to view captures
+
+Logman.exe query
+
+## Examples to stop captures
+
+Logman.exe stop Basic1WeekCollector
