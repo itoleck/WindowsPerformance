@@ -16,13 +16,19 @@ Network Monitor 3 - <https://docs.microsoft.com/en-us/troubleshoot/windows-serve
 
 etl2pcapng - <https://github.com/microsoft/etl2pcapng> - Open source tool to convert .etl network traces to WireShark format.
 
+<https://github.com/microsoft/eventtracing-processing> - Microsoft.Windows.EventTracing.Processing NuGet package - Create .Net applications that can read and utilize Event Trace Logs (.etl).
+
+<https://github.com/Microsoft/perfview> - Perfview - PerfView is a free performance-analysis tool that helps isolate CPU and memory-related performance issues.
+
+<https://docs.microsoft.com/en-us/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f> - Microsoft Message Analyzer - Retired November 25, 2019.
+
 ## Built-in Tools
 
 WPR.exe - Built-in Windows 10+ version. Capture a trace without installing the ADK or anything else.
 
 Perfmon.exe - Built-in Windows. Performance Monitor
 
-Logman.exe - Built-in Windows. Mange performance logs and ETW tracing from command line.
+Logman.exe - Built-in Windows. Manage performance logs and ETW tracing from command line.
 
 Tracerpt.exe - Built-in Windows. Processes event trace logs or real-time data from instrumented event trace providers and allows you to generate trace analysis reports and CSV (comma-delimited) files for the events generated
 
