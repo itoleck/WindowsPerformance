@@ -1,4 +1,4 @@
-# WindowsPerformance
+![Alt text](title.png)
 
 Various Windows Performance files, settings, documents and practice traces
 
