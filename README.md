@@ -34,6 +34,8 @@ Various Windows Performance files, settings, documents and practice traces. Clon
 
 - WPA - <https://docs.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-analyzer>
 
+- [Windows Performance Analysis Field Guide (Clint Huffman)](https://www.bing.com/search?q=Windows+Performance+Analysis+Field+Guide)
+
 - [Fundamentals of Windows Performance Analysis Book (Alex Kirshenbaum and Michael Milirud)](https://leanpub.com/perfbook)
 
 - [Defrag Tools Show](https://docs.microsoft.com/en-us/Shows/Defrag-Tools/)
