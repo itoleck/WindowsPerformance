@@ -1,6 +1,6 @@
 # Windows Performance Recorder
 
-Other WPR profiles Links
+## Other WPR profiles Links
 
 [YongRhee-MDE/Scripts - Microsoft Defender for EndPoint](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)
 
