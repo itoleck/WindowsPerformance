@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone='yes'?>
+
+<WindowsPerformanceRecorder Version="1.0" Author="Chad Schultz" Team="Chad Schultz" Comments="Basic resource tracing using a Circular log" Company="" Copyright="">
+    <Profiles>
+      <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
+            <BufferSize Value="1024"/>
+            <Buffers Value="200"/>
+          </SystemCollector>
+
+      <EventCollector Id="GeneralEventCollector" Name="GeneralEventCollector">
+        <BufferSize Value="1024"/>
+        <Buffers Value="300"/>
+      </EventCollector>
+      
+      <SystemProvider Id="GeneralSystemProvider">
+        <Keywords>
+          <Keyword Value="CpuConfig"/>
+          <Keyword Value="CSwitch"/>
+          <Keyword Value="DiskIO"/>
+          <Keyword Value="DPC"/>
+          <Keyword Value="HardFaults"/>
+          <Keyword Value="Interrupt"/>
+          <Keyword Value="Loader"/>
+          <Keyword Value="MemoryInfo"/>
+          <Keyword Value="MemoryInfoWS"/>
+          <Keyword Value="ProcessCounter"/>
+          <Keyword Value="ProcessThread"/>
+          <Keyword Value="SampledProfile"/>
+        </Keywords>
+      </SystemProvider>
+
+      <EventProvider Id="EventProvider_Microsoft-Windows-TCPIP"
+                     Name="Microsoft-Windows-TCPIP"
+                     NonPagedMemory="true">
+        <Keywords>
+          <Keyword Value="0x2e000007fcff"/>
+        </Keywords>
+        <CaptureStateOnSave>
+          <Keyword Value="0x2e000007fcff"/>
+        </CaptureStateOnSave>
+      </EventProvider>
+      
+      <Profile Id="GeneralCircularProfile.Light.Memory"
+               Description="100MBCircuarMemoryGeneralCircularProfile"
+               DetailLevel="Light"
+               LoggingMode="Memory"
+               Name="GeneralCircularProfile">
+        
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+
+          <EventCollectorId Value="GeneralEventCollector">
+            <EventProviders>
+              <EventProviderId Value="EventProvider_Microsoft-Windows-TCPIP"/>
+            </EventProviders>
+          </EventCollectorId>
+          
+        </Collectors>
+      </Profile>
+    </Profiles>
+</WindowsPerformanceRecorder>

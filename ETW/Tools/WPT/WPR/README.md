@@ -1,0 +1,1 @@
+# Windows Performance Recorder Information
