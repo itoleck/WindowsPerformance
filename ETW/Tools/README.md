@@ -36,6 +36,8 @@
 
 ## Other Tools
 
+- <https://github.com/itoleck/ETLSmasher> - ETLSmasher, my .etl trace file re-logger.
+
 - <https://github.com/google/UIforETW> - User interface for recording and managing ETW traces - Bruce Dawson
 
 - <https://github.com/gcpartners/ETLParser> - parse ETL files
