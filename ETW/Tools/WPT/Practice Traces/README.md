@@ -6,7 +6,7 @@
 
 If you would like to comment your findings use the (<https://github.com/itoleck/WindowsPerformance/issues>) tab and create a new issue with the "**question**" tag. Walk-throughs are available in the Issues tab with the **answer key** tag.
 
-\
+&nbsp;
 
 - [**Create_100files.etl**](https://github.com/itoleck/WindowsPerformance/issues/3) - 100 files were being created. Can you find the issue with disk performance in this trace?
 
