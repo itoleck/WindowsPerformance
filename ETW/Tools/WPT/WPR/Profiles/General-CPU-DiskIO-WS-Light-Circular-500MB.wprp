@@ -36,5 +36,19 @@
           </SystemCollectorId>
         </Collectors>
       </Profile>
+
+      <Profile Id="GeneralCircularProfile.Light.File"
+               Description="500MBCircuarMemoryGeneralCircularProfile"
+               DetailLevel="Light"
+               LoggingMode="File"
+               Name="GeneralCircularProfile">
+
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+        </Collectors>
+      </Profile>
+      
     </Profiles>
 </WindowsPerformanceRecorder>

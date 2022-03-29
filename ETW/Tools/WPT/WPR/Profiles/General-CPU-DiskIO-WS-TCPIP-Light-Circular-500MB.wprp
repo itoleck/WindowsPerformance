@@ -56,8 +56,27 @@
               <EventProviderId Value="EventProvider_Microsoft-Windows-TCPIP"/>
             </EventProviders>
           </EventCollectorId>
-          
         </Collectors>
       </Profile>
+
+      <Profile Id="GeneralCircularProfile.Light.File"
+               Description="100MBCircuarMemoryGeneralCircularProfile"
+               DetailLevel="Light"
+               LoggingMode="File"
+               Name="GeneralCircularProfile">
+
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+
+          <EventCollectorId Value="GeneralEventCollector">
+            <EventProviders>
+              <EventProviderId Value="EventProvider_Microsoft-Windows-TCPIP"/>
+            </EventProviders>
+          </EventCollectorId>
+        </Collectors>
+      </Profile>
+      
     </Profiles>
 </WindowsPerformanceRecorder>
