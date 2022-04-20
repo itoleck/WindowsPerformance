@@ -5,6 +5,14 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+$DCSName = "Basic1MonthCollector"
+$DCSOS = "Win11-2022"
+$DCSTemplate = ("..\..\Templates\{0}\{1}_{2}.xml" -f $DCSOS, $DCSName, $DCSOS)
+$DCSOutputPath = (Select-String -Raw -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
-logman.exe import -n Basic1MonthCollector_Win11-2022 -xml ..\..\Templates\Win11-2022\Basic1MonthCollector_Win11-2022.xml
-logman.exe start Basic1MonthCollector_Win11-2022
+Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green
+
+logman.exe import -n $DCSName -xml $DCSTemplate
+logman.exe start $DCSName
+
+Write-Host ("Tracing will complete automatically and be saved to {0}" -f $DCSOutputPath) -ForegroundColor Green

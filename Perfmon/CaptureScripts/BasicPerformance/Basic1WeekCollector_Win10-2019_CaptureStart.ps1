@@ -5,6 +5,14 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+$DCSName = "Basic1WeekCollector"
+$DCSOS = "Win10-2019"
+$DCSTemplate = ("..\..\Templates\{0}\{1}_{2}.xml" -f $DCSOS, $DCSName, $DCSOS)
+$DCSOutputPath = (Select-String -Raw -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
-logman.exe import -n Basic1WeekCollector_Win10-2019 -xml ..\..\Templates\Win10-2019\Basic1WeekCollector_Win10-2019.xml
-logman.exe start Basic1WeekCollector_Win10-2019
+Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green
+
+logman.exe import -n $DCSName -xml $DCSTemplate
+logman.exe start $DCSName
+
+Write-Host ("Tracing will complete automatically and be saved to {0}" -f $DCSOutputPath) -ForegroundColor Green

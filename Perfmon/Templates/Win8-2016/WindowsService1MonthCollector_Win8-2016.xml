@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<DataCollectorSet>
+	<Status>0</Status>
+	<Duration>2419200</Duration>
+	<Description>Collect basic Windows services counters that will be about 1,000 datapoints in a week.</Description>
+	<DescriptionUnresolved>Collect basic Windows services counters that will be about 1,000 datapoints in a week.</DescriptionUnresolved>
+	<DisplayName>
+	</DisplayName>
+	<DisplayNameUnresolved>
+	</DisplayNameUnresolved>
+	<SchedulesEnabled>-1</SchedulesEnabled>
+	<Keyword>CPU</Keyword>
+	<Keyword>Memory</Keyword>
+	<Keyword>Disk</Keyword>
+	<Keyword>Performance</Keyword>
+	<Keyword>Service</Keyword>
+	<LatestOutputLocation>
+	</LatestOutputLocation>
+	<Name>WindowsServiceTroubleshooting</Name>
+	<OutputLocation>%systemdrive%\perflogs\System\Performance\WindowsService1MonthCollector\Computer_00000000-000001</OutputLocation>
+	<RootPath>%systemdrive%\perflogs\System\Performance\WindowsService1MonthCollector</RootPath>
+	<Segment>0</Segment>
+	<SegmentMaxDuration>0</SegmentMaxDuration>
+	<SegmentMaxSize>0</SegmentMaxSize>
+	<SerialNumber>1</SerialNumber>
+	<Server>
+	</Server>
+	<Subdirectory>
+	</Subdirectory>
+	<SubdirectoryFormat>3</SubdirectoryFormat>
+	<SubdirectoryFormatPattern>yyyyMMdd\-NNNNNN</SubdirectoryFormatPattern>
+	<Task>
+	</Task>
+	<TaskRunAsSelf>0</TaskRunAsSelf>
+	<TaskArguments>
+	</TaskArguments>
+	<TaskUserTextArguments>
+	</TaskUserTextArguments>
+	<UserAccount>SYSTEM</UserAccount>
+	<Security>O:BAG:DUD:AI(A;;FA;;;SY)(A;;FA;;;BA)(A;;0x1200a9;;;LU)(A;;0x1301ff;;;S-1-5-80-2661322625-712705077-2999183737-3043590567-590698655)(A;ID;0x1f019f;;;BA)(A;ID;0x1f019f;;;SY)(A;ID;FR;;;AU)(A;ID;FR;;;LS)(A;ID;FR;;;NS)(A;ID;FA;;;BA)</Security>
+	<StopOnCompletion>0</StopOnCompletion>
+	<TraceDataCollector>
+		<DataCollectorType>1</DataCollectorType>
+		<Name>DataCollector02</Name>
+		<FileName>DataCollector02</FileName>
+		<FileNameFormat>0</FileNameFormat>
+		<FileNameFormatPattern>
+		</FileNameFormatPattern>
+		<LogAppend>0</LogAppend>
+		<LogCircular>0</LogCircular>
+		<LogOverwrite>0</LogOverwrite>
+		<LatestOutputLocation>
+		</LatestOutputLocation>
+		<Guid>{00000000-0000-0000-0000-000000000000}</Guid>
+		<BufferSize>8</BufferSize>
+		<BuffersLost>0</BuffersLost>
+		<BuffersWritten>0</BuffersWritten>
+		<ClockType>1</ClockType>
+		<EventsLost>0</EventsLost>
+		<ExtendedModes>0</ExtendedModes>
+		<FlushTimer>0</FlushTimer>
+		<FreeBuffers>0</FreeBuffers>
+		<MaximumBuffers>0</MaximumBuffers>
+		<MinimumBuffers>0</MinimumBuffers>
+		<NumberOfBuffers>0</NumberOfBuffers>
+		<PreallocateFile>0</PreallocateFile>
+		<ProcessMode>0</ProcessMode>
+		<RealTimeBuffersLost>0</RealTimeBuffersLost>
+		<SessionName>DataCollector02</SessionName>
+		<SessionThreadId>0</SessionThreadId>
+		<StreamMode>1</StreamMode>
+		<TraceDataProvider>
+			<DisplayName>Microsoft-Windows-Services</DisplayName>
+			<FilterEnabled>0</FilterEnabled>
+			<FilterType>0</FilterType>
+			<Level>
+				<Description>Events up to this level are enabled</Description>
+				<ValueMapType>1</ValueMapType>
+				<Value>255</Value>
+				<ValueMapItem>
+					<Key>win:Informational</Key>
+					<Description>Information</Description>
+					<Enabled>0</Enabled>
+					<Value>0x4</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>0</Enabled>
+					<Value>0x0</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0xff</Value>
+				</ValueMapItem>
+			</Level>
+			<KeywordsAny>
+				<Description>Events with any of these keywords are enabled</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0xffffffffffffffff</Value>
+				<ValueMapItem>
+					<Key>Performance</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x10000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>win:ResponseTime</Key>
+					<Description>Response Time</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>Microsoft-Windows-Services/Diagnostic</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x10</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x20</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x40</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x80</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x100</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x200</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x400</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x800</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x20000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x40000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x80000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x100000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x200000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x400000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x800000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x10000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x20000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x40000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x80000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x100000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x200000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x400000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x800000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x10000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x20000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x40000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x80000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x100000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x200000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x400000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x800000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x10000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x20000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x40000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x80000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x100000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x200000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x400000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x800000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x1000000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x2000000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x4000000000000000</Value>
+				</ValueMapItem>
+			</KeywordsAny>
+			<KeywordsAll>
+				<Description>Events with all of these keywords are enabled</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0x0</Value>
+				<ValueMapItem>
+					<Key>Performance</Key>
+					<Description>
+					</Description>
+					<Enabled>0</Enabled>
+					<Value>0x10000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>win:ResponseTime</Key>
+					<Description>Response Time</Description>
+					<Enabled>0</Enabled>
+					<Value>0x1000000000000</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>Microsoft-Windows-Services/Diagnostic</Key>
+					<Description>
+					</Description>
+					<Enabled>0</Enabled>
+					<Value>0x8000000000000000</Value>
+				</ValueMapItem>
+			</KeywordsAll>
+			<Properties>
+				<Description>These additional data fields will be collected with each event</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0</Value>
+				<ValueMapItem>
+					<Key>sid</Key>
+					<Description>Security Identifier</Description>
+					<Enabled>0</Enabled>
+					<Value>0x1</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>sessionid</Key>
+					<Description>Session Identifier</Description>
+					<Enabled>0</Enabled>
+					<Value>0x2</Value>
+				</ValueMapItem>
+			</Properties>
+			<Guid>{0063715B-EEDA-4007-9429-AD526F62696E}</Guid>
+		</TraceDataProvider>
+        <TraceDataProvider>
+			<DisplayName>Microsoft-Windows-Services-Svchost</DisplayName>
+			<FilterEnabled>0</FilterEnabled>
+			<FilterType>0</FilterType>
+			<Level>
+				<Description>Events up to this level are enabled</Description>
+				<ValueMapType>1</ValueMapType>
+				<Value>255</Value>
+				<ValueMapItem>
+					<Key>win:Informational</Key>
+					<Description>Information</Description>
+					<Enabled>0</Enabled>
+					<Value>0x4</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>0</Enabled>
+					<Value>0x0</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>
+					</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0xff</Value>
+				</ValueMapItem>
+			</Level>
+			<KeywordsAny>
+				<Description>Events with any of these keywords are enabled</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0x8000000000000000</Value>
+				<ValueMapItem>
+					<Key>Microsoft-Windows-Services-Svchost/Diagnostic</Key>
+					<Description>
+					</Description>
+					<Enabled>-1</Enabled>
+					<Value>0x8000000000000000</Value>
+				</ValueMapItem>
+			</KeywordsAny>
+			<KeywordsAll>
+				<Description>Events with all of these keywords are enabled</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0x0</Value>
+				<ValueMapItem>
+					<Key>Microsoft-Windows-Services-Svchost/Diagnostic</Key>
+					<Description>
+					</Description>
+					<Enabled>0</Enabled>
+					<Value>0x8000000000000000</Value>
+				</ValueMapItem>
+			</KeywordsAll>
+			<Properties>
+				<Description>These additional data fields will be collected with each event</Description>
+				<ValueMapType>2</ValueMapType>
+				<Value>0</Value>
+				<ValueMapItem>
+					<Key>sid</Key>
+					<Description>Security Identifier</Description>
+					<Enabled>0</Enabled>
+					<Value>0x1</Value>
+				</ValueMapItem>
+				<ValueMapItem>
+					<Key>sessionid</Key>
+					<Description>Session Identifier</Description>
+					<Enabled>0</Enabled>
+					<Value>0x2</Value>
+				</ValueMapItem>
+			</Properties>
+			<Guid>{06184C97-5201-480E-92AF-3A3626C5B140}</Guid>
+		</TraceDataProvider>
+	</TraceDataCollector>
+	<ConfigurationDataCollector>
+		<DataCollectorType>2</DataCollectorType>
+		<Name>DataCollector03</Name>
+		<FileName>DataCollector03</FileName>
+		<FileNameFormat>0</FileNameFormat>
+		<FileNameFormatPattern>
+		</FileNameFormatPattern>
+		<LogAppend>0</LogAppend>
+		<LogCircular>0</LogCircular>
+		<LogOverwrite>0</LogOverwrite>
+		<LatestOutputLocation>
+		</LatestOutputLocation>
+		<QueryNetworkAdapters>0</QueryNetworkAdapters>
+		<RegistryKey>HKLM\SYSTEM\CurrentControlSet\Services</RegistryKey>
+		<File>C:\Windows\System32\services.exe</File>
+		<ManagementQuery>root\cimv2:SELECT * FROM Win32_Service</ManagementQuery>
+		<FileMaxCount>0</FileMaxCount>
+		<FileMaxTotalSize>0</FileMaxTotalSize>
+		<FileMaxRecursiveDepth>0</FileMaxRecursiveDepth>
+		<RegistryMaxRecursiveDepth>0</RegistryMaxRecursiveDepth>
+		<SystemStateFile>
+		</SystemStateFile>
+	</ConfigurationDataCollector>
+	<PerformanceCounterDataCollector>
+		<DataCollectorType>0</DataCollectorType>
+		<Name>DataCollector01</Name>
+		<FileName>DataCollector01</FileName>
+		<FileNameFormat>0</FileNameFormat>
+		<FileNameFormatPattern>
+		</FileNameFormatPattern>
+		<LogAppend>0</LogAppend>
+		<LogCircular>0</LogCircular>
+		<LogOverwrite>0</LogOverwrite>
+		<LatestOutputLocation>
+		</LatestOutputLocation>
+		<DataSourceName>
+		</DataSourceName>
+		<SampleInterval>300</SampleInterval>
+		<SegmentMaxRecords>0</SegmentMaxRecords>
+		<LogFileFormat>3</LogFileFormat>
+		<Counter>\Processor Information(*)\% Privileged Time</Counter>
+		<Counter>\Processor Information(*)\% Processor Time</Counter>
+		<Counter>\Processor Information(*)\% User Time</Counter>
+		<Counter>\Memory\Available MBytes</Counter>
+		<Counter>\Memory\Commit Limit</Counter>
+		<Counter>\Memory\Committed Bytes</Counter>
+		<Counter>\Memory\Pool Nonpaged Bytes</Counter>
+		<Counter>\Memory\Pool Paged Bytes</Counter>
+		<Counter>\LogicalDisk(*)\% Free Space</Counter>
+		<Counter>\LogicalDisk(*)\% Idle Time</Counter>
+		<Counter>\LogicalDisk(*)\Avg. Disk sec/Read</Counter>
+		<Counter>\LogicalDisk(*)\Avg. Disk sec/Write</Counter>
+		<Counter>\Process(wininit)\% Privileged Time</Counter>
+		<Counter>\Process(wininit)\% Processor Time</Counter>
+		<Counter>\Process(wininit)\% User Time</Counter>
+		<Counter>\Process(wininit)\Creating Process ID</Counter>
+		<Counter>\Process(wininit)\Elapsed Time</Counter>
+		<Counter>\Process(wininit)\Handle Count</Counter>
+		<Counter>\Process(wininit)\ID Process</Counter>
+		<Counter>\Process(wininit)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(wininit)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(wininit)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(wininit)\Pool Paged Bytes</Counter>
+		<Counter>\Process(wininit)\Priority Base</Counter>
+		<Counter>\Process(wininit)\Private Bytes</Counter>
+		<Counter>\Process(wininit)\Thread Count</Counter>
+		<Counter>\Process(wininit)\Virtual Bytes</Counter>
+		<Counter>\Process(wininit)\Working Set</Counter>
+		<Counter>\Process(services)\% Privileged Time</Counter>
+		<Counter>\Process(services)\% Processor Time</Counter>
+		<Counter>\Process(services)\% User Time</Counter>
+		<Counter>\Process(services)\Creating Process ID</Counter>
+		<Counter>\Process(services)\Elapsed Time</Counter>
+		<Counter>\Process(services)\Handle Count</Counter>
+		<Counter>\Process(services)\ID Process</Counter>
+		<Counter>\Process(services)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(services)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(services)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(services)\Pool Paged Bytes</Counter>
+		<Counter>\Process(services)\Priority Base</Counter>
+		<Counter>\Process(services)\Private Bytes</Counter>
+		<Counter>\Process(services)\Thread Count</Counter>
+		<Counter>\Process(services)\Virtual Bytes</Counter>
+		<Counter>\Process(services)\Working Set</Counter>
+		<Counter>\Process(svchost)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#1)\% Privileged Time</Counter>
+		<Counter>\Process(svchost)\% Processor Time</Counter>
+		<Counter>\Process(svchost#1)\% Processor Time</Counter>
+		<Counter>\Process(svchost)\% User Time</Counter>
+		<Counter>\Process(svchost#1)\% User Time</Counter>
+		<Counter>\Process(svchost)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#1)\Creating Process ID</Counter>
+		<Counter>\Process(svchost)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#1)\Elapsed Time</Counter>
+		<Counter>\Process(svchost)\Handle Count</Counter>
+		<Counter>\Process(svchost#1)\Handle Count</Counter>
+		<Counter>\Process(svchost)\ID Process</Counter>
+		<Counter>\Process(svchost#1)\ID Process</Counter>
+		<Counter>\Process(svchost)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#1)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#1)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#1)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#1)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost)\Priority Base</Counter>
+		<Counter>\Process(svchost#1)\Priority Base</Counter>
+		<Counter>\Process(svchost)\Private Bytes</Counter>
+		<Counter>\Process(svchost#1)\Private Bytes</Counter>
+		<Counter>\Process(svchost)\Thread Count</Counter>
+		<Counter>\Process(svchost#1)\Thread Count</Counter>
+		<Counter>\Process(svchost)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#1)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost)\Working Set</Counter>
+		<Counter>\Process(svchost#1)\Working Set</Counter>
+		<Counter>\Process(svchost#2)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#3)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#2)\% Processor Time</Counter>
+		<Counter>\Process(svchost#3)\% Processor Time</Counter>
+		<Counter>\Process(svchost#2)\% User Time</Counter>
+		<Counter>\Process(svchost#3)\% User Time</Counter>
+		<Counter>\Process(svchost#2)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#3)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#2)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#3)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#2)\Handle Count</Counter>
+		<Counter>\Process(svchost#3)\Handle Count</Counter>
+		<Counter>\Process(svchost#2)\ID Process</Counter>
+		<Counter>\Process(svchost#3)\ID Process</Counter>
+		<Counter>\Process(svchost#2)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#3)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#2)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#3)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#2)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#3)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#2)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#3)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#2)\Priority Base</Counter>
+		<Counter>\Process(svchost#3)\Priority Base</Counter>
+		<Counter>\Process(svchost#2)\Private Bytes</Counter>
+		<Counter>\Process(svchost#3)\Private Bytes</Counter>
+		<Counter>\Process(svchost#2)\Thread Count</Counter>
+		<Counter>\Process(svchost#3)\Thread Count</Counter>
+		<Counter>\Process(svchost#2)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#3)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#2)\Working Set</Counter>
+		<Counter>\Process(svchost#3)\Working Set</Counter>
+		<Counter>\Process(svchost#4)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#5)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#4)\% Processor Time</Counter>
+		<Counter>\Process(svchost#5)\% Processor Time</Counter>
+		<Counter>\Process(svchost#4)\% User Time</Counter>
+		<Counter>\Process(svchost#5)\% User Time</Counter>
+		<Counter>\Process(svchost#4)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#5)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#4)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#5)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#4)\Handle Count</Counter>
+		<Counter>\Process(svchost#5)\Handle Count</Counter>
+		<Counter>\Process(svchost#4)\ID Process</Counter>
+		<Counter>\Process(svchost#5)\ID Process</Counter>
+		<Counter>\Process(svchost#4)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#5)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#4)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#5)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#4)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#5)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#4)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#5)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#4)\Priority Base</Counter>
+		<Counter>\Process(svchost#5)\Priority Base</Counter>
+		<Counter>\Process(svchost#4)\Private Bytes</Counter>
+		<Counter>\Process(svchost#5)\Private Bytes</Counter>
+		<Counter>\Process(svchost#4)\Thread Count</Counter>
+		<Counter>\Process(svchost#5)\Thread Count</Counter>
+		<Counter>\Process(svchost#4)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#5)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#4)\Working Set</Counter>
+		<Counter>\Process(svchost#5)\Working Set</Counter>
+		<Counter>\Process(svchost#6)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#7)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#6)\% Processor Time</Counter>
+		<Counter>\Process(svchost#7)\% Processor Time</Counter>
+		<Counter>\Process(svchost#6)\% User Time</Counter>
+		<Counter>\Process(svchost#7)\% User Time</Counter>
+		<Counter>\Process(svchost#6)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#7)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#6)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#7)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#6)\Handle Count</Counter>
+		<Counter>\Process(svchost#7)\Handle Count</Counter>
+		<Counter>\Process(svchost#6)\ID Process</Counter>
+		<Counter>\Process(svchost#7)\ID Process</Counter>
+		<Counter>\Process(svchost#6)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#7)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#6)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#7)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#6)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#7)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#6)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#7)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#6)\Priority Base</Counter>
+		<Counter>\Process(svchost#7)\Priority Base</Counter>
+		<Counter>\Process(svchost#6)\Private Bytes</Counter>
+		<Counter>\Process(svchost#7)\Private Bytes</Counter>
+		<Counter>\Process(svchost#6)\Thread Count</Counter>
+		<Counter>\Process(svchost#7)\Thread Count</Counter>
+		<Counter>\Process(svchost#6)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#7)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#6)\Working Set</Counter>
+		<Counter>\Process(svchost#7)\Working Set</Counter>
+		<Counter>\Process(svchost#8)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#9)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#8)\% Processor Time</Counter>
+		<Counter>\Process(svchost#9)\% Processor Time</Counter>
+		<Counter>\Process(svchost#8)\% User Time</Counter>
+		<Counter>\Process(svchost#9)\% User Time</Counter>
+		<Counter>\Process(svchost#8)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#9)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#8)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#9)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#8)\Handle Count</Counter>
+		<Counter>\Process(svchost#9)\Handle Count</Counter>
+		<Counter>\Process(svchost#8)\ID Process</Counter>
+		<Counter>\Process(svchost#9)\ID Process</Counter>
+		<Counter>\Process(svchost#8)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#9)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#8)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#9)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#8)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#9)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#8)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#9)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#8)\Priority Base</Counter>
+		<Counter>\Process(svchost#9)\Priority Base</Counter>
+		<Counter>\Process(svchost#8)\Private Bytes</Counter>
+		<Counter>\Process(svchost#9)\Private Bytes</Counter>
+		<Counter>\Process(svchost#8)\Thread Count</Counter>
+		<Counter>\Process(svchost#9)\Thread Count</Counter>
+		<Counter>\Process(svchost#8)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#9)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#8)\Working Set</Counter>
+		<Counter>\Process(svchost#9)\Working Set</Counter>
+		<Counter>\Process(svchost#10)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#11)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#10)\% Processor Time</Counter>
+		<Counter>\Process(svchost#11)\% Processor Time</Counter>
+		<Counter>\Process(svchost#10)\% User Time</Counter>
+		<Counter>\Process(svchost#11)\% User Time</Counter>
+		<Counter>\Process(svchost#10)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#11)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#10)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#11)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#10)\Handle Count</Counter>
+		<Counter>\Process(svchost#11)\Handle Count</Counter>
+		<Counter>\Process(svchost#10)\ID Process</Counter>
+		<Counter>\Process(svchost#11)\ID Process</Counter>
+		<Counter>\Process(svchost#10)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#11)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#10)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#11)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#10)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#11)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#10)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#11)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#10)\Priority Base</Counter>
+		<Counter>\Process(svchost#11)\Priority Base</Counter>
+		<Counter>\Process(svchost#10)\Private Bytes</Counter>
+		<Counter>\Process(svchost#11)\Private Bytes</Counter>
+		<Counter>\Process(svchost#10)\Thread Count</Counter>
+		<Counter>\Process(svchost#11)\Thread Count</Counter>
+		<Counter>\Process(svchost#10)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#11)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#10)\Working Set</Counter>
+		<Counter>\Process(svchost#11)\Working Set</Counter>
+		<Counter>\Process(svchost#12)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#13)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#12)\% Processor Time</Counter>
+		<Counter>\Process(svchost#13)\% Processor Time</Counter>
+		<Counter>\Process(svchost#12)\% User Time</Counter>
+		<Counter>\Process(svchost#13)\% User Time</Counter>
+		<Counter>\Process(svchost#12)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#13)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#12)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#13)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#12)\Handle Count</Counter>
+		<Counter>\Process(svchost#13)\Handle Count</Counter>
+		<Counter>\Process(svchost#12)\ID Process</Counter>
+		<Counter>\Process(svchost#13)\ID Process</Counter>
+		<Counter>\Process(svchost#12)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#13)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#12)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#13)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#12)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#13)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#12)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#13)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#12)\Priority Base</Counter>
+		<Counter>\Process(svchost#13)\Priority Base</Counter>
+		<Counter>\Process(svchost#12)\Private Bytes</Counter>
+		<Counter>\Process(svchost#13)\Private Bytes</Counter>
+		<Counter>\Process(svchost#12)\Thread Count</Counter>
+		<Counter>\Process(svchost#13)\Thread Count</Counter>
+		<Counter>\Process(svchost#12)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#13)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#12)\Working Set</Counter>
+		<Counter>\Process(svchost#13)\Working Set</Counter>
+		<Counter>\Process(svchost#14)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#15)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#14)\% Processor Time</Counter>
+		<Counter>\Process(svchost#15)\% Processor Time</Counter>
+		<Counter>\Process(svchost#14)\% User Time</Counter>
+		<Counter>\Process(svchost#15)\% User Time</Counter>
+		<Counter>\Process(svchost#14)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#15)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#14)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#15)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#14)\Handle Count</Counter>
+		<Counter>\Process(svchost#15)\Handle Count</Counter>
+		<Counter>\Process(svchost#14)\ID Process</Counter>
+		<Counter>\Process(svchost#15)\ID Process</Counter>
+		<Counter>\Process(svchost#14)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#15)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#14)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#15)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#14)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#15)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#14)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#15)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#14)\Priority Base</Counter>
+		<Counter>\Process(svchost#15)\Priority Base</Counter>
+		<Counter>\Process(svchost#14)\Private Bytes</Counter>
+		<Counter>\Process(svchost#15)\Private Bytes</Counter>
+		<Counter>\Process(svchost#14)\Thread Count</Counter>
+		<Counter>\Process(svchost#15)\Thread Count</Counter>
+		<Counter>\Process(svchost#14)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#15)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#14)\Working Set</Counter>
+		<Counter>\Process(svchost#15)\Working Set</Counter>
+		<Counter>\Process(svchost#16)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#17)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#16)\% Processor Time</Counter>
+		<Counter>\Process(svchost#17)\% Processor Time</Counter>
+		<Counter>\Process(svchost#16)\% User Time</Counter>
+		<Counter>\Process(svchost#17)\% User Time</Counter>
+		<Counter>\Process(svchost#16)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#17)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#16)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#17)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#16)\Handle Count</Counter>
+		<Counter>\Process(svchost#17)\Handle Count</Counter>
+		<Counter>\Process(svchost#16)\ID Process</Counter>
+		<Counter>\Process(svchost#17)\ID Process</Counter>
+		<Counter>\Process(svchost#16)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#17)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#16)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#17)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#16)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#17)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#16)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#17)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#16)\Priority Base</Counter>
+		<Counter>\Process(svchost#17)\Priority Base</Counter>
+		<Counter>\Process(svchost#16)\Private Bytes</Counter>
+		<Counter>\Process(svchost#17)\Private Bytes</Counter>
+		<Counter>\Process(svchost#16)\Thread Count</Counter>
+		<Counter>\Process(svchost#17)\Thread Count</Counter>
+		<Counter>\Process(svchost#16)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#17)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#16)\Working Set</Counter>
+		<Counter>\Process(svchost#17)\Working Set</Counter>
+		<Counter>\Process(svchost#18)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#19)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#18)\% Processor Time</Counter>
+		<Counter>\Process(svchost#19)\% Processor Time</Counter>
+		<Counter>\Process(svchost#18)\% User Time</Counter>
+		<Counter>\Process(svchost#19)\% User Time</Counter>
+		<Counter>\Process(svchost#18)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#19)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#18)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#19)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#18)\Handle Count</Counter>
+		<Counter>\Process(svchost#19)\Handle Count</Counter>
+		<Counter>\Process(svchost#18)\ID Process</Counter>
+		<Counter>\Process(svchost#19)\ID Process</Counter>
+		<Counter>\Process(svchost#18)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#19)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#18)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#19)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#18)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#19)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#18)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#19)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#18)\Priority Base</Counter>
+		<Counter>\Process(svchost#19)\Priority Base</Counter>
+		<Counter>\Process(svchost#18)\Private Bytes</Counter>
+		<Counter>\Process(svchost#19)\Private Bytes</Counter>
+		<Counter>\Process(svchost#18)\Thread Count</Counter>
+		<Counter>\Process(svchost#19)\Thread Count</Counter>
+		<Counter>\Process(svchost#18)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#19)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#18)\Working Set</Counter>
+		<Counter>\Process(svchost#19)\Working Set</Counter>
+		<Counter>\Process(svchost#20)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#21)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#20)\% Processor Time</Counter>
+		<Counter>\Process(svchost#21)\% Processor Time</Counter>
+		<Counter>\Process(svchost#20)\% User Time</Counter>
+		<Counter>\Process(svchost#21)\% User Time</Counter>
+		<Counter>\Process(svchost#20)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#21)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#20)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#21)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#20)\Handle Count</Counter>
+		<Counter>\Process(svchost#21)\Handle Count</Counter>
+		<Counter>\Process(svchost#20)\ID Process</Counter>
+		<Counter>\Process(svchost#21)\ID Process</Counter>
+		<Counter>\Process(svchost#20)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#21)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#20)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#21)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#20)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#21)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#20)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#21)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#20)\Priority Base</Counter>
+		<Counter>\Process(svchost#21)\Priority Base</Counter>
+		<Counter>\Process(svchost#20)\Private Bytes</Counter>
+		<Counter>\Process(svchost#21)\Private Bytes</Counter>
+		<Counter>\Process(svchost#20)\Thread Count</Counter>
+		<Counter>\Process(svchost#21)\Thread Count</Counter>
+		<Counter>\Process(svchost#20)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#21)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#20)\Working Set</Counter>
+		<Counter>\Process(svchost#21)\Working Set</Counter>
+		<Counter>\Process(svchost#22)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#23)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#22)\% Processor Time</Counter>
+		<Counter>\Process(svchost#23)\% Processor Time</Counter>
+		<Counter>\Process(svchost#22)\% User Time</Counter>
+		<Counter>\Process(svchost#23)\% User Time</Counter>
+		<Counter>\Process(svchost#22)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#23)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#22)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#23)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#22)\Handle Count</Counter>
+		<Counter>\Process(svchost#23)\Handle Count</Counter>
+		<Counter>\Process(svchost#22)\ID Process</Counter>
+		<Counter>\Process(svchost#23)\ID Process</Counter>
+		<Counter>\Process(svchost#22)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#23)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#22)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#23)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#22)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#23)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#22)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#23)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#22)\Priority Base</Counter>
+		<Counter>\Process(svchost#23)\Priority Base</Counter>
+		<Counter>\Process(svchost#22)\Private Bytes</Counter>
+		<Counter>\Process(svchost#23)\Private Bytes</Counter>
+		<Counter>\Process(svchost#22)\Thread Count</Counter>
+		<Counter>\Process(svchost#23)\Thread Count</Counter>
+		<Counter>\Process(svchost#22)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#23)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#22)\Working Set</Counter>
+		<Counter>\Process(svchost#23)\Working Set</Counter>
+		<Counter>\Process(svchost#24)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#25)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#24)\% Processor Time</Counter>
+		<Counter>\Process(svchost#25)\% Processor Time</Counter>
+		<Counter>\Process(svchost#24)\% User Time</Counter>
+		<Counter>\Process(svchost#25)\% User Time</Counter>
+		<Counter>\Process(svchost#24)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#25)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#24)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#25)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#24)\Handle Count</Counter>
+		<Counter>\Process(svchost#25)\Handle Count</Counter>
+		<Counter>\Process(svchost#24)\ID Process</Counter>
+		<Counter>\Process(svchost#25)\ID Process</Counter>
+		<Counter>\Process(svchost#24)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#25)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#24)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#25)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#24)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#25)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#24)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#25)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#24)\Priority Base</Counter>
+		<Counter>\Process(svchost#25)\Priority Base</Counter>
+		<Counter>\Process(svchost#24)\Private Bytes</Counter>
+		<Counter>\Process(svchost#25)\Private Bytes</Counter>
+		<Counter>\Process(svchost#24)\Thread Count</Counter>
+		<Counter>\Process(svchost#25)\Thread Count</Counter>
+		<Counter>\Process(svchost#24)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#25)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#24)\Working Set</Counter>
+		<Counter>\Process(svchost#25)\Working Set</Counter>
+		<Counter>\Process(svchost#26)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#27)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#26)\% Processor Time</Counter>
+		<Counter>\Process(svchost#27)\% Processor Time</Counter>
+		<Counter>\Process(svchost#26)\% User Time</Counter>
+		<Counter>\Process(svchost#27)\% User Time</Counter>
+		<Counter>\Process(svchost#26)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#27)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#26)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#27)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#26)\Handle Count</Counter>
+		<Counter>\Process(svchost#27)\Handle Count</Counter>
+		<Counter>\Process(svchost#26)\ID Process</Counter>
+		<Counter>\Process(svchost#27)\ID Process</Counter>
+		<Counter>\Process(svchost#26)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#27)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#26)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#27)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#26)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#27)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#26)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#27)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#26)\Priority Base</Counter>
+		<Counter>\Process(svchost#27)\Priority Base</Counter>
+		<Counter>\Process(svchost#26)\Private Bytes</Counter>
+		<Counter>\Process(svchost#27)\Private Bytes</Counter>
+		<Counter>\Process(svchost#26)\Thread Count</Counter>
+		<Counter>\Process(svchost#27)\Thread Count</Counter>
+		<Counter>\Process(svchost#26)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#27)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#26)\Working Set</Counter>
+		<Counter>\Process(svchost#27)\Working Set</Counter>
+		<Counter>\Process(svchost#28)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#29)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#28)\% Processor Time</Counter>
+		<Counter>\Process(svchost#29)\% Processor Time</Counter>
+		<Counter>\Process(svchost#28)\% User Time</Counter>
+		<Counter>\Process(svchost#29)\% User Time</Counter>
+		<Counter>\Process(svchost#28)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#29)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#28)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#29)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#28)\Handle Count</Counter>
+		<Counter>\Process(svchost#29)\Handle Count</Counter>
+		<Counter>\Process(svchost#28)\ID Process</Counter>
+		<Counter>\Process(svchost#29)\ID Process</Counter>
+		<Counter>\Process(svchost#28)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#29)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#28)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#29)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#28)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#29)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#28)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#29)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#28)\Priority Base</Counter>
+		<Counter>\Process(svchost#29)\Priority Base</Counter>
+		<Counter>\Process(svchost#28)\Private Bytes</Counter>
+		<Counter>\Process(svchost#29)\Private Bytes</Counter>
+		<Counter>\Process(svchost#28)\Thread Count</Counter>
+		<Counter>\Process(svchost#29)\Thread Count</Counter>
+		<Counter>\Process(svchost#28)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#29)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#28)\Working Set</Counter>
+		<Counter>\Process(svchost#29)\Working Set</Counter>
+		<Counter>\Process(svchost#30)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#31)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#30)\% Processor Time</Counter>
+		<Counter>\Process(svchost#31)\% Processor Time</Counter>
+		<Counter>\Process(svchost#30)\% User Time</Counter>
+		<Counter>\Process(svchost#31)\% User Time</Counter>
+		<Counter>\Process(svchost#30)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#31)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#30)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#31)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#30)\Handle Count</Counter>
+		<Counter>\Process(svchost#31)\Handle Count</Counter>
+		<Counter>\Process(svchost#30)\ID Process</Counter>
+		<Counter>\Process(svchost#31)\ID Process</Counter>
+		<Counter>\Process(svchost#30)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#31)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#30)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#31)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#30)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#31)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#30)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#31)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#30)\Priority Base</Counter>
+		<Counter>\Process(svchost#31)\Priority Base</Counter>
+		<Counter>\Process(svchost#30)\Private Bytes</Counter>
+		<Counter>\Process(svchost#31)\Private Bytes</Counter>
+		<Counter>\Process(svchost#30)\Thread Count</Counter>
+		<Counter>\Process(svchost#31)\Thread Count</Counter>
+		<Counter>\Process(svchost#30)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#31)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#30)\Working Set</Counter>
+		<Counter>\Process(svchost#31)\Working Set</Counter>
+		<Counter>\Process(svchost#32)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#33)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#32)\% Processor Time</Counter>
+		<Counter>\Process(svchost#33)\% Processor Time</Counter>
+		<Counter>\Process(svchost#32)\% User Time</Counter>
+		<Counter>\Process(svchost#33)\% User Time</Counter>
+		<Counter>\Process(svchost#32)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#33)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#32)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#33)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#32)\Handle Count</Counter>
+		<Counter>\Process(svchost#33)\Handle Count</Counter>
+		<Counter>\Process(svchost#32)\ID Process</Counter>
+		<Counter>\Process(svchost#33)\ID Process</Counter>
+		<Counter>\Process(svchost#32)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#33)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#32)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#33)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#32)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#33)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#32)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#33)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#32)\Priority Base</Counter>
+		<Counter>\Process(svchost#33)\Priority Base</Counter>
+		<Counter>\Process(svchost#32)\Private Bytes</Counter>
+		<Counter>\Process(svchost#33)\Private Bytes</Counter>
+		<Counter>\Process(svchost#32)\Thread Count</Counter>
+		<Counter>\Process(svchost#33)\Thread Count</Counter>
+		<Counter>\Process(svchost#32)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#33)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#32)\Working Set</Counter>
+		<Counter>\Process(svchost#33)\Working Set</Counter>
+		<Counter>\Process(svchost#34)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#35)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#34)\% Processor Time</Counter>
+		<Counter>\Process(svchost#35)\% Processor Time</Counter>
+		<Counter>\Process(svchost#34)\% User Time</Counter>
+		<Counter>\Process(svchost#35)\% User Time</Counter>
+		<Counter>\Process(svchost#34)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#35)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#34)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#35)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#34)\Handle Count</Counter>
+		<Counter>\Process(svchost#35)\Handle Count</Counter>
+		<Counter>\Process(svchost#34)\ID Process</Counter>
+		<Counter>\Process(svchost#35)\ID Process</Counter>
+		<Counter>\Process(svchost#34)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#35)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#34)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#35)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#34)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#35)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#34)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#35)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#34)\Priority Base</Counter>
+		<Counter>\Process(svchost#35)\Priority Base</Counter>
+		<Counter>\Process(svchost#34)\Private Bytes</Counter>
+		<Counter>\Process(svchost#35)\Private Bytes</Counter>
+		<Counter>\Process(svchost#34)\Thread Count</Counter>
+		<Counter>\Process(svchost#35)\Thread Count</Counter>
+		<Counter>\Process(svchost#34)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#35)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#34)\Working Set</Counter>
+		<Counter>\Process(svchost#35)\Working Set</Counter>
+		<Counter>\Process(svchost#36)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#37)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#36)\% Processor Time</Counter>
+		<Counter>\Process(svchost#37)\% Processor Time</Counter>
+		<Counter>\Process(svchost#36)\% User Time</Counter>
+		<Counter>\Process(svchost#37)\% User Time</Counter>
+		<Counter>\Process(svchost#36)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#37)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#36)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#37)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#36)\Handle Count</Counter>
+		<Counter>\Process(svchost#37)\Handle Count</Counter>
+		<Counter>\Process(svchost#36)\ID Process</Counter>
+		<Counter>\Process(svchost#37)\ID Process</Counter>
+		<Counter>\Process(svchost#36)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#37)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#36)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#37)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#36)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#37)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#36)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#37)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#36)\Priority Base</Counter>
+		<Counter>\Process(svchost#37)\Priority Base</Counter>
+		<Counter>\Process(svchost#36)\Private Bytes</Counter>
+		<Counter>\Process(svchost#37)\Private Bytes</Counter>
+		<Counter>\Process(svchost#36)\Thread Count</Counter>
+		<Counter>\Process(svchost#37)\Thread Count</Counter>
+		<Counter>\Process(svchost#36)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#37)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#36)\Working Set</Counter>
+		<Counter>\Process(svchost#37)\Working Set</Counter>
+		<Counter>\Process(svchost#38)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#39)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#38)\% Processor Time</Counter>
+		<Counter>\Process(svchost#39)\% Processor Time</Counter>
+		<Counter>\Process(svchost#38)\% User Time</Counter>
+		<Counter>\Process(svchost#39)\% User Time</Counter>
+		<Counter>\Process(svchost#38)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#39)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#38)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#39)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#38)\Handle Count</Counter>
+		<Counter>\Process(svchost#39)\Handle Count</Counter>
+		<Counter>\Process(svchost#38)\ID Process</Counter>
+		<Counter>\Process(svchost#39)\ID Process</Counter>
+		<Counter>\Process(svchost#38)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#39)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#38)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#39)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#38)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#39)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#38)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#39)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#38)\Priority Base</Counter>
+		<Counter>\Process(svchost#39)\Priority Base</Counter>
+		<Counter>\Process(svchost#38)\Private Bytes</Counter>
+		<Counter>\Process(svchost#39)\Private Bytes</Counter>
+		<Counter>\Process(svchost#38)\Thread Count</Counter>
+		<Counter>\Process(svchost#39)\Thread Count</Counter>
+		<Counter>\Process(svchost#38)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#39)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#38)\Working Set</Counter>
+		<Counter>\Process(svchost#39)\Working Set</Counter>
+		<Counter>\Process(svchost#40)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#41)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#40)\% Processor Time</Counter>
+		<Counter>\Process(svchost#41)\% Processor Time</Counter>
+		<Counter>\Process(svchost#40)\% User Time</Counter>
+		<Counter>\Process(svchost#41)\% User Time</Counter>
+		<Counter>\Process(svchost#40)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#41)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#40)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#41)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#40)\Handle Count</Counter>
+		<Counter>\Process(svchost#41)\Handle Count</Counter>
+		<Counter>\Process(svchost#40)\ID Process</Counter>
+		<Counter>\Process(svchost#41)\ID Process</Counter>
+		<Counter>\Process(svchost#40)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#41)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#40)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#41)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#40)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#41)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#40)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#41)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#40)\Priority Base</Counter>
+		<Counter>\Process(svchost#41)\Priority Base</Counter>
+		<Counter>\Process(svchost#40)\Private Bytes</Counter>
+		<Counter>\Process(svchost#41)\Private Bytes</Counter>
+		<Counter>\Process(svchost#40)\Thread Count</Counter>
+		<Counter>\Process(svchost#41)\Thread Count</Counter>
+		<Counter>\Process(svchost#40)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#41)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#40)\Working Set</Counter>
+		<Counter>\Process(svchost#41)\Working Set</Counter>
+		<Counter>\Process(svchost#42)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#43)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#42)\% Processor Time</Counter>
+		<Counter>\Process(svchost#43)\% Processor Time</Counter>
+		<Counter>\Process(svchost#42)\% User Time</Counter>
+		<Counter>\Process(svchost#43)\% User Time</Counter>
+		<Counter>\Process(svchost#42)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#43)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#42)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#43)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#42)\Handle Count</Counter>
+		<Counter>\Process(svchost#43)\Handle Count</Counter>
+		<Counter>\Process(svchost#42)\ID Process</Counter>
+		<Counter>\Process(svchost#43)\ID Process</Counter>
+		<Counter>\Process(svchost#42)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#43)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#42)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#43)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#42)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#43)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#42)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#43)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#42)\Priority Base</Counter>
+		<Counter>\Process(svchost#43)\Priority Base</Counter>
+		<Counter>\Process(svchost#42)\Private Bytes</Counter>
+		<Counter>\Process(svchost#43)\Private Bytes</Counter>
+		<Counter>\Process(svchost#42)\Thread Count</Counter>
+		<Counter>\Process(svchost#43)\Thread Count</Counter>
+		<Counter>\Process(svchost#42)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#43)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#42)\Working Set</Counter>
+		<Counter>\Process(svchost#43)\Working Set</Counter>
+		<Counter>\Process(svchost#44)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#45)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#44)\% Processor Time</Counter>
+		<Counter>\Process(svchost#45)\% Processor Time</Counter>
+		<Counter>\Process(svchost#44)\% User Time</Counter>
+		<Counter>\Process(svchost#45)\% User Time</Counter>
+		<Counter>\Process(svchost#44)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#45)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#44)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#45)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#44)\Handle Count</Counter>
+		<Counter>\Process(svchost#45)\Handle Count</Counter>
+		<Counter>\Process(svchost#44)\ID Process</Counter>
+		<Counter>\Process(svchost#45)\ID Process</Counter>
+		<Counter>\Process(svchost#44)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#45)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#44)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#45)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#44)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#45)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#44)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#45)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#44)\Priority Base</Counter>
+		<Counter>\Process(svchost#45)\Priority Base</Counter>
+		<Counter>\Process(svchost#44)\Private Bytes</Counter>
+		<Counter>\Process(svchost#45)\Private Bytes</Counter>
+		<Counter>\Process(svchost#44)\Thread Count</Counter>
+		<Counter>\Process(svchost#45)\Thread Count</Counter>
+		<Counter>\Process(svchost#44)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#45)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#44)\Working Set</Counter>
+		<Counter>\Process(svchost#45)\Working Set</Counter>
+		<Counter>\Process(svchost#46)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#47)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#46)\% Processor Time</Counter>
+		<Counter>\Process(svchost#47)\% Processor Time</Counter>
+		<Counter>\Process(svchost#46)\% User Time</Counter>
+		<Counter>\Process(svchost#47)\% User Time</Counter>
+		<Counter>\Process(svchost#46)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#47)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#46)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#47)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#46)\Handle Count</Counter>
+		<Counter>\Process(svchost#47)\Handle Count</Counter>
+		<Counter>\Process(svchost#46)\ID Process</Counter>
+		<Counter>\Process(svchost#47)\ID Process</Counter>
+		<Counter>\Process(svchost#46)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#47)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#46)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#47)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#46)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#47)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#46)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#47)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#46)\Priority Base</Counter>
+		<Counter>\Process(svchost#47)\Priority Base</Counter>
+		<Counter>\Process(svchost#46)\Private Bytes</Counter>
+		<Counter>\Process(svchost#47)\Private Bytes</Counter>
+		<Counter>\Process(svchost#46)\Thread Count</Counter>
+		<Counter>\Process(svchost#47)\Thread Count</Counter>
+		<Counter>\Process(svchost#46)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#47)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#46)\Working Set</Counter>
+		<Counter>\Process(svchost#47)\Working Set</Counter>
+		<Counter>\Process(svchost#48)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#49)\% Privileged Time</Counter>
+		<Counter>\Process(svchost#48)\% Processor Time</Counter>
+		<Counter>\Process(svchost#49)\% Processor Time</Counter>
+		<Counter>\Process(svchost#48)\% User Time</Counter>
+		<Counter>\Process(svchost#49)\% User Time</Counter>
+		<Counter>\Process(svchost#48)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#49)\Creating Process ID</Counter>
+		<Counter>\Process(svchost#48)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#49)\Elapsed Time</Counter>
+		<Counter>\Process(svchost#48)\Handle Count</Counter>
+		<Counter>\Process(svchost#49)\Handle Count</Counter>
+		<Counter>\Process(svchost#48)\ID Process</Counter>
+		<Counter>\Process(svchost#49)\ID Process</Counter>
+		<Counter>\Process(svchost#48)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#49)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(svchost#48)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#49)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(svchost#48)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#49)\Pool Nonpaged Bytes</Counter>
+		<Counter>\Process(svchost#48)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#49)\Pool Paged Bytes</Counter>
+		<Counter>\Process(svchost#48)\Priority Base</Counter>
+		<Counter>\Process(svchost#49)\Priority Base</Counter>
+		<Counter>\Process(svchost#48)\Private Bytes</Counter>
+		<Counter>\Process(svchost#49)\Private Bytes</Counter>
+		<Counter>\Process(svchost#48)\Thread Count</Counter>
+		<Counter>\Process(svchost#49)\Thread Count</Counter>
+		<Counter>\Process(svchost#48)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#49)\Virtual Bytes</Counter>
+		<Counter>\Process(svchost#48)\Working Set</Counter>
+		<Counter>\Process(svchost#49)\Working Set</Counter>
+	</PerformanceCounterDataCollector>
+	<DataManager>
+		<Enabled>0</Enabled>
+		<CheckBeforeRunning>0</CheckBeforeRunning>
+		<MinFreeDisk>0</MinFreeDisk>
+		<MaxSize>0</MaxSize>
+		<MaxFolderCount>0</MaxFolderCount>
+		<ResourcePolicy>0</ResourcePolicy>
+		<ReportFileName>report.html</ReportFileName>
+		<RuleTargetFileName>report.xml</RuleTargetFileName>
+		<EventsFileName>
+		</EventsFileName>
+	</DataManager>
+</DataCollectorSet>

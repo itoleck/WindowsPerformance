@@ -5,7 +5,7 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
-$DCSName = "DotNet_1Week_PAL"
+$DCSName = "Hyper-V_1Month_PAL"
 $DCSOS = "PAL"
 $DCSTemplate = ("..\..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
 $DCSOutputPath = (Select-String -Raw -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")

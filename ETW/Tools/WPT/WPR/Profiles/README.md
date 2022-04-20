@@ -1,6 +1,6 @@
 # Windows Performance Recorder profile files
 
-Trace names start with the performance scenario (General, boot, shutdown,etc.)
+Trace names start with the performance scenario (General, boot, shutdown, etc.)
 
 SuperLight profiles are profiles that will capture the least amount of information as possible and cause the least amount of impact given the scenario.
 

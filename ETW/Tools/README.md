@@ -40,6 +40,8 @@
 
 - <https://github.com/google/UIforETW> - User interface for recording and managing ETW traces - Bruce Dawson
 
+- <https://github.com/zodiacon/EtwExplorer> - View ETW Provider metadata - Pavel Yosifovich
+
 - <https://github.com/gcpartners/ETLParser> - parse ETL files
 
 - <https://github.com/lowleveldesign/wtrace> - FileIO for a process

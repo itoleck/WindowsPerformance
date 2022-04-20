@@ -5,9 +5,9 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
-$DCSName = "DotNet_1Week_PAL"
-$DCSOS = "PAL"
-$DCSTemplate = ("..\..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
+$DCSName = "WindowsService1WeekCollector"
+$DCSOS = "Win11-2022"
+$DCSTemplate = ("..\..\Templates\{0}\{1}_{2}.xml" -f $DCSOS, $DCSName, $DCSOS)
 $DCSOutputPath = (Select-String -Raw -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
 Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green

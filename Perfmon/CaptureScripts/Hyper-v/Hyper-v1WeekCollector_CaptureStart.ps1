@@ -5,6 +5,14 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+$DCSName = "Hyper-V_1Week_PAL"
+$DCSOS = "PAL"
+$DCSTemplate = ("..\..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
+$DCSOutputPath = (Select-String -Raw -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
-logman.exe import -n Hyper-v1WeekCollector -xml ..\..\Templates\PAL\Hyper-V_1Week_PAL.xml
-logman.exe start Hyper-v1WeekCollector
+Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green
+
+logman.exe import -n $DCSName -xml $DCSTemplate
+logman.exe start $DCSName
+
+Write-Host ("Tracing will complete automatically and be saved to {0}" -f $DCSOutputPath) -ForegroundColor Green
