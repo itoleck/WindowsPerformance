@@ -17,6 +17,7 @@ netsh trace start capture=yes tracefile="c:\temp\%SUBFILENAME%-nettrace.etl" max
 wpr.exe -start GeneralProfile -start CPU -start DiskIO -start FileIO -start GPU -start DesktopComposition -start Minifilter
 @echo Starting tracing of issue. Please reproduce the problem. Press any key to save.
 pause
+wpr.exe -marker "User stopped tracing. The rest of trace is rundown, merge and save."
 wpr.exe -stop "c:\temp\%SUBFILENAME%-ETWTrace_Output.etl"
 netsh trace stop
 start /w psr.exe /stop

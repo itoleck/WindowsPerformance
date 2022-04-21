@@ -5,6 +5,7 @@ wpr.exe -start GeneralProfile -start CPU -start DiskIO -start FileIO
 Procmon.exe /AcceptEula /Quiet /Minimized /BackingFile c:\temp\ProcmonTrace.PML
 @echo Starting tracing of issue. Please reproduce the problem. Press any key to save.
 pause
+wpr.exe -marker "User stopped tracing. The rest of trace is rundown, merge and save."
 wpr.exe -stop c:\temp\ETWTrace.etl
 netsh trace stop
 Procmon.exe /Terminate
