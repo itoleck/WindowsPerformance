@@ -6,6 +6,7 @@
         Create files in a path and show time taken.
         .DESCRIPTION
         Create files in a path and show time taken.
+        To trace disk performance, start a Perfmon or WPR/Xper trace before running command and save after the files have been created.
         .PARAMETER FileCount
         Number of files to write
         .PARAMETER FilePath
@@ -15,7 +16,7 @@
         .OUTPUTS
         String
         .EXAMPLE
-        .\CreateFiles.ps1 -FileCount 2 -FilePath c:\temp\ -FileSize 8192
+        .\Start-CreateFileLoad.ps1 -FileCount 2 -FilePath c:\temp\ -FileSize 8192
         .NOTES
         
         .LINK

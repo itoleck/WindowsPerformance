@@ -20,7 +20,9 @@
 
 - [Perfview](https://github.com/Microsoft/perfview) - PerfView is a free performance-analysis tool that helps isolate CPU and memory-related performance issues.
 
-- [Microsoft Message Analyzer](https://docs.microsoft.com/en-us/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f) Retired November 25, 2019.
+- [UMDH (User-Mode Dump Heap)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/umdh) - Analyzes the Microsoft Windows heap memory allocations for a given process.
+
+- [MMA (Microsoft Message Analyzer)](https://docs.microsoft.com/en-us/openspecs/blog/ms-winintbloglp/dd98b93c-0a75-4eb0-b92e-e760c502394f) Retired November 25, 2019.
 
 ## Built-in Tools
 
@@ -30,9 +32,15 @@
 
 - Logman.exe - Built-in Windows. Manage performance logs and ETW tracing from command line.
 
+- Typeperf.exe - Built-in Windows. List available performance counters.
+
+- Relog.exe - Built-in Windows. Relog trace files to other formats (CSV, CSV) and save out specific timeframes and counters to new files.
+
 - Tracerpt.exe - Built-in Windows. Processes event trace logs or real-time data from instrumented event trace providers and allows you to generate trace analysis reports and CSV (comma-delimited) files for the events generated
 
 - Event Viewer - Built-in Windows. View and captures event log files.
+
+- Pktmon.exe - Another built-in network packet capture, has built-in etl2pcapng for converting .etl(Windows) to .pcapng(WireShark).
 
 ## Other Tools
 

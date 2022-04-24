@@ -39,3 +39,5 @@ Various Windows Performance files, settings, documents and practice traces. Clon
 - [Fundamentals of Windows Performance Analysis Book (Alex Kirshenbaum and Michael Milirud)](https://leanpub.com/perfbook)
 
 - [Defrag Tools Show](https://docs.microsoft.com/en-us/Shows/Defrag-Tools/)
+
+- [Inside Show](https://docs.microsoft.com/en-us/shows/inside)
