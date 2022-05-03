@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone='yes'?>
+
+<WindowsPerformanceRecorder Version="1.0" Author="Chad Schultz" Team="Chad Schultz"
+                            Comments="Verbose resource tracing using a circular log or file with 1GB buffer" Company="" Copyright="">
+    <Profiles>
+      <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
+            <BufferSize Value="1024"/>
+            <Buffers Value="1024"/>
+          </SystemCollector>
+
+      <SystemProvider Id="GeneralSystemProvider">
+        <Keywords>
+          <Keyword Value="CpuConfig"/>
+          <Keyword Value="CSwitch"/>
+          <Keyword Value="DiskIO"/>
+          <Keyword Value="FileIO" />
+          <Keyword Value="FileIOInit" />
+          <Keyword Value="DPC"/>
+          <Keyword Value="HardFaults"/>
+          <Keyword Value="IdealProcessor"/>
+          <Keyword Value="Interrupt"/>
+          <Keyword Value="KernelQueue" />
+          <Keyword Value="Loader"/>
+          <Keyword Value="MemoryInfo"/>
+          <Keyword Value="MemoryInfoWS"/>
+          <Keyword Value="Power"/>
+          <Keyword Value="ProcessCounter"/>
+          <Keyword Value="ProcessThread"/>
+          <Keyword Value="ReadyThread"/>
+          <Keyword Value="SampledProfile"/>
+          <Keyword Value="SynchronizationObjects" />
+          <Keyword Value="ThreadPriority" />
+        </Keywords>
+        <Stacks>
+                <Stack Value="SampledProfile"/>
+                <Stack Value="CSwitch"/>
+                <Stack Value="ReadyThread"/>
+                <Stack Value="FileCreate"/>
+                <Stack Value="FileClose"/>
+                <Stack Value="ThreadDCEnd" />
+                <!-- Additional stacks that enhance Wait Analysis -->
+                <Stack Value="ThreadCreate" />
+                <Stack Value="ThreadPoolCallbackStart" />
+                <Stack Value="ThreadPoolCallbackEnqueue" />
+                <Stack Value="ThreadPoolCallbackDequeue" />
+                <Stack Value="ThreadPoolCallbackStop" />
+                <Stack Value="KernelQueueEnqueue" />
+                <Stack Value="KernelQueueDequeue" />
+            </Stacks>
+      </SystemProvider>
+
+      <Profile Id="1GBCircuarMemoryGeneralVerboseProfile.Verbose.Memory"
+               Description="1GBCircuarMemoryGeneralVerboseProfile"
+               DetailLevel="Verbose"
+               LoggingMode="Memory"
+               Name="1GBCircuarMemoryGeneralVerboseProfile">
+        
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+        </Collectors>
+      </Profile>
+
+      <Profile Id="1GBLogToFileGeneralVerboseProfile.Verbose.File"
+               Description="1GBLogToFileGeneralVerboseProfile"
+               DetailLevel="Verbose"
+               LoggingMode="File"
+               Name="1GBLogToFileGeneralVerboseProfile">
+
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+        </Collectors>
+      </Profile>
+      
+    </Profiles>
+</WindowsPerformanceRecorder>
