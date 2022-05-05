@@ -16,9 +16,11 @@
         .OUTPUTS
         String
         .EXAMPLE
-        .\Start-CreateFileLoad.ps1 -FileCount 2 -FilePath c:\temp\ -FileSize 8192
+        .\Start-CreateFileLoad.ps1 -FileCount 1000 -FilePath c:\temp\ -FileSize 8192
         .NOTES
-        
+        Sequential, not multi-threaded, also tests how fast console hosts spawn, which can be slowed down by high CPU overhead or hooks into CreateProcess.
+        1000 8192 byte files should be able to be created on NVME SSD in about 45 seconds.
+        1000 8192 byte files should be able to be created on 7,200K RPM HDD in about 50 seconds.
         .LINK
 #>
 
