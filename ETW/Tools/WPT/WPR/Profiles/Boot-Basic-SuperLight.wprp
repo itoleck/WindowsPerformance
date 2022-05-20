@@ -61,7 +61,10 @@
                          Name="Microsoft-Windows-Shell-Core"
                          NonPagedMemory="true">
     </EventProvider>
-    
+    <EventProvider Id="EventProvider_Microsoft-Windows-Subsys-SMSS"
+                         Name="Microsoft-Windows-Subsys-SMSS"
+                         NonPagedMemory="true">
+    </EventProvider>
     <Profile
         Description="Boot: Basic resource trace"
         DetailLevel="Light"
@@ -83,6 +86,7 @@
             <EventProviderId Value="EventProvider_Microsoft-Windows-Services"/>
             <EventProviderId Value="EventProvider_Microsoft-Windows-Services-Svchost"/>
             <EventProviderId Value="EventProvider_Microsoft-Windows-Shell-Core"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Subsys-SMSS"/>
           </EventProviders>
         </EventCollectorId>
       </Collectors>

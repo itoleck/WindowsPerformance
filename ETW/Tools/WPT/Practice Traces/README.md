@@ -27,3 +27,5 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 - [**DiskIOHigh.etl**](https://github.com/itoleck/WindowsPerformance/issues/2) - Can you find out why the Disk/s were very utilized in this trace?
 
 - [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
+
+- **Shutdown60.etl** - Another shutdown trace, can you find out why Windows took too long to shutdown?
