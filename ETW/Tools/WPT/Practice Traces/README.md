@@ -20,8 +20,6 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - **CaseOfThe30SecondFileExplorer.etl** - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
 
-- **HighKernelCPU.etl** - Can you find the reason for high Kernel CPU usage?
-
 - **LongShutdown.etl** - Can you find out why Windows took too long to shutdown?
 
 - [**DiskIOHigh.etl**](https://github.com/itoleck/WindowsPerformance/issues/2) - Can you find out why the Disk/s were very utilized in this trace?
