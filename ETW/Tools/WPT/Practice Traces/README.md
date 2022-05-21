@@ -14,8 +14,6 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - **SlowBoot2.etl** - Can you find why this computer took too long to boot?
 
-- **SlowBoot3.etl** - Can you find why this computer took too long to boot?
-
 - **SlowBoot4.etl** - Can you find why this computer took too long to boot?
 
 - **CaseOfThe30SecondFileExplorer.etl** - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
