@@ -12,16 +12,16 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - [**SlowBoot1.etl**](https://github.com/itoleck/WindowsPerformance/issues/4) - Can you find the 2 issues with slow Windows boot and login performance?
 
-- **SlowBoot2.etl** - Can you find why this computer took too long to boot?
+- [**SlowBoot2.etl**](https://github.com/itoleck/WindowsPerformance/issues/5) - Can you find why this computer took too long to boot?
 
 - **SlowBoot4.etl** - Can you find why this computer took too long to boot?
 
-- **CaseOfThe30SecondFileExplorer.etl** - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
+- [**CaseOfThe30SecondFileExplorer.etl**](https://github.com/itoleck/WindowsPerformance/issues/8) - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
 
-- **LongShutdown.etl** - Can you find out why Windows took too long to shutdown?
+- [**LongShutdown.etl**](https://github.com/itoleck/WindowsPerformance/issues/6) - Can you find out why Windows took too long to shutdown?
 
 - [**DiskIOHigh.etl**](https://github.com/itoleck/WindowsPerformance/issues/2) - Can you find out why the Disk/s were very utilized in this trace?
 
 - [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
 
-- **Shutdown60.etl** - Another shutdown trace, can you find out why Windows took too long to shutdown?
+- [**Shutdown60.etl**](https://github.com/itoleck/WindowsPerformance/issues/7) - Another shutdown trace, can you find out why Windows took too long to shutdown?
