@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone='yes'?>
+<?xml version="1.0" encoding="utf-8" standalone='yes'?>
 
 <WindowsPerformanceRecorder Version="1.0" Author="Chad Schultz" Team="Chad Schultz"
-                            Comments="Basic resource boot tracing" Company="" Copyright="">
+                            Comments="Medium resource boot tracing" Company="" Copyright="">
   <Profiles>
 
     <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
@@ -18,7 +18,10 @@
       <Keywords>
         <Keyword Value="CpuConfig"/>
         <Keyword Value="CSwitch"/>
+        <Keyword Value="DiskIO"/>
         <Keyword Value="DPC"/>
+        <Keyword Value="FileIO"/>
+        <Keyword Value="FileIOInit"/>
         <Keyword Value="Interrupt"/>
         <Keyword Value="Loader"/>
         <Keyword Value="MemoryInfo"/>
@@ -121,4 +124,12 @@
     </Profile>
 
   </Profiles>
+
+    <TraceMergeProperties>
+        <TraceMergeProperty  Id="Default" Name="Default" Base="">
+            <DeletePreMergedTraceFiles Value="true"/>
+            <FileCompression Value="true"/>
+        </TraceMergeProperty>
+    </TraceMergeProperties>
+
 </WindowsPerformanceRecorder>
