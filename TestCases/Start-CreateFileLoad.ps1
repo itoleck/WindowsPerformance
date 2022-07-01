@@ -6,7 +6,7 @@
         Create files in a path and show time taken.
         .DESCRIPTION
         Create files in a path and show time taken.
-        To trace disk performance, start a Perfmon or WPR/Xper trace before running command and save after the files have been created.
+        To trace disk performance, start a Perfmon or WPR/Xperf trace before running command and save after the files have been created.
         .PARAMETER FileCount
         Number of files to write
         .PARAMETER FilePath
