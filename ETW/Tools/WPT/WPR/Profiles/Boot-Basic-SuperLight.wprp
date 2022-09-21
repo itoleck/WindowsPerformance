@@ -121,4 +121,12 @@
     </Profile>
 
   </Profiles>
+
+    <TraceMergeProperties>
+        <TraceMergeProperty  Id="Default" Name="Default" Base="">
+            <DeletePreMergedTraceFiles Value="true"/>
+            <FileCompression Value="true"/>
+        </TraceMergeProperty>
+    </TraceMergeProperties>
+
 </WindowsPerformanceRecorder>
