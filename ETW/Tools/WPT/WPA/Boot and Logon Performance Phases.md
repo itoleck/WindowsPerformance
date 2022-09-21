@@ -2,7 +2,7 @@
 
 Wpa.exe boot analysis
 
-![Alt text](bootphasegraph.png)
+![WPA Boot Phases](bootphasegraph.png)
 
 If the Boot Phases graph is unavailable, use the below information to find the durations of each boot phase.
 
