@@ -7,7 +7,7 @@
 
 $DCSName = "Basic1MonthCollector"
 $DCSOS = "Win8-2016"
-$DCSTemplate = (" ..\Templates\{0}\{1}_{2}.xml" -f $DCSOS, $DCSName, $DCSOS)
+$DCSTemplate = (" ..\..\Templates\{0}\{1}_{2}.xml" -f $DCSOS, $DCSName, $DCSOS)
 $DCSOutputPath = (Select-String -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
 Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green

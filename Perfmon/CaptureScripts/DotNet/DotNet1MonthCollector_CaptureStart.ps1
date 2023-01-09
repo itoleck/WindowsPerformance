@@ -7,7 +7,7 @@
 
 $DCSName = "DotNet_1Month_PAL"
 $DCSOS = "PAL"
-$DCSTemplate = (" ..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
+$DCSTemplate = (" ..\..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
 $DCSOutputPath = (Select-String -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
 Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green
