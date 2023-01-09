@@ -7,12 +7,13 @@
 
 $DCSName = "Hyper-V_1Month_PAL"
 $DCSOS = "PAL"
-$DCSTemplate = (" ..\..\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
-$DCSOutputPath = (Select-String -Pattern "<OutputLocation>" -Path $DCSTemplate).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
+$DCSTemplate = ("\Templates\{0}\{1}.xml" -f $DCSOS, $DCSName)
+$DCSParent = (Get-Item (Get-Location)).parent.parent.fullname
+$DCSOutputPath = (Select-String -Pattern "<OutputLocation>" -Path ($DCSParent + $DCSTemplate)).ToString().Replace("<OutputLocation>","").Replace("</OutputLocation>","").Trim(" ").Trim("`t")
 
 Write-Host ("Starting Datacollector Set: {0}" -f $DCSName) -ForegroundColor Green
 
-logman.exe import -n $DCSName -xml $DCSTemplate
+logman.exe import -n $DCSName -xml ($DCSParent + $DCSTemplate)
 logman.exe start $DCSName
 
 Write-Host ("Tracing will complete automatically and be saved to {0}" -f $DCSOutputPath) -ForegroundColor Green
