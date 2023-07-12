@@ -8,7 +8,13 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 &nbsp;
 
-- [**Create_100files.etl**](https://github.com/itoleck/WindowsPerformance/issues/3) - 100 files were being created. Can you find the issue with disk performance in this trace?
+### Boot and Logon related
+
+- **StorageEnumPerf.etl** - Can you find the difference in start up performance between storage types?
+
+- [**Shutdown60.etl**](https://github.com/itoleck/WindowsPerformance/issues/7) - Another shutdown trace, can you find out why Windows took too long to shutdown?
+
+- [**LongShutdown.etl**](https://github.com/itoleck/WindowsPerformance/issues/6) - Can you find out why Windows took too long to shutdown?
 
 - [**SlowBoot1.etl**](https://github.com/itoleck/WindowsPerformance/issues/4) - Can you find the 2 issues with slow Windows boot and login performance?
 
@@ -16,14 +22,26 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - **SlowBoot4.etl** - Can you find why this computer took too long to boot?
 
-- [**CaseOfThe30SecondFileExplorer.etl**](https://github.com/itoleck/WindowsPerformance/issues/8) - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
+- **SlowBoot5.etl** - Can you find why this computer took too long to boot?
 
-- [**LongShutdown.etl**](https://github.com/itoleck/WindowsPerformance/issues/6) - Can you find out why Windows took too long to shutdown?
+- **SlowBoot6.etl** - Can you find why this computer took too long to boot?
 
-- [**DiskIOHigh.etl**](https://github.com/itoleck/WindowsPerformance/issues/2) - Can you find out why the Disk/s were very utilized in this trace?
+### CPU related
+
+- [**HighCPUUsageEasy.etl**](https://github.com/itoleck/WindowsPerformance/issues) - Can you find the cause of high CPU usage?
+
+- [**HighCPUUsage.etl**](https://github.com/itoleck/WindowsPerformance/issues) - Can you find the cause of high CPU usage?
 
 - [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
 
-- [**Shutdown60.etl**](https://github.com/itoleck/WindowsPerformance/issues/7) - Another shutdown trace, can you find out why Windows took too long to shutdown?
+### Storage related
 
-- [**HighCPUUsage.etl**](https://github.com/itoleck/WindowsPerformance/issues) - Can you find the cause of high CPU usage?
+- [**Create_100files.etl**](https://github.com/itoleck/WindowsPerformance/issues/3) - 100 files were being created. Can you find the issue with disk performance in this trace?
+
+- [**DiskIOHigh.etl**](https://github.com/itoleck/WindowsPerformance/issues/2) - Can you find out why the Disk/s were very utilized in this trace?
+
+- **SlowFileCopy1.etl** - Can you find why this computer copied files slowly?
+
+### Other issue
+
+- [**CaseOfThe30SecondFileExplorer.etl**](https://github.com/itoleck/WindowsPerformance/issues/8) - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
