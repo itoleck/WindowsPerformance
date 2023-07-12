@@ -8,7 +8,7 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 &nbsp;
 
-### Boot and Logon related
+### Boot and Logon Related
 
 - **StorageEnumPerf.etl** - Can you find the difference in start up performance between storage types?
 
@@ -26,7 +26,7 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - **SlowBoot6.etl** - Can you find why this computer took too long to boot?
 
-### CPU related
+### CPU Related
 
 - [**HighCPUUsageEasy.etl**](https://github.com/itoleck/WindowsPerformance/issues) - Can you find the cause of high CPU usage?
 
@@ -34,7 +34,7 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
 
-### Storage related
+### Storage Related
 
 - [**Create_100files.etl**](https://github.com/itoleck/WindowsPerformance/issues/3) - 100 files were being created. Can you find the issue with disk performance in this trace?
 
@@ -42,6 +42,10 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - **SlowFileCopy1.etl** - Can you find why this computer copied files slowly?
 
-### Other issue
+### Memory Related
+
+- **MemoryUsage1.etl** - Can you find the reason for high memory usage?
+
+### Other issues
 
 - [**CaseOfThe30SecondFileExplorer.etl**](https://github.com/itoleck/WindowsPerformance/issues/8) - Can you find out why Windows Explorer was slow to show the "My Computer" files and folders?
