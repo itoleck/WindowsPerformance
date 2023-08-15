@@ -34,6 +34,8 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
 
+- [**CPUUsageSpikesInteresting.etl**] - Can you find what is causing the CPU to spike at some times? What is happening at this time? Can you find out more process, file, or version information about the cause?
+
 ### Storage Related
 
 - [**Create_100files.etl**](https://github.com/itoleck/WindowsPerformance/issues/3) - 100 files were being created. Can you find the issue with disk performance in this trace?

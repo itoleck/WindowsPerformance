@@ -16,3 +16,5 @@ To trace a live system use the following scripts:
 - CaptureLive-PSR-Network-WPR.cmd
 
 These scripts need to run as a local administrator. When the problem occurs a user can hit any key to stop and save the trace files and supply for analysis.
+
+Microsoft publishes a troubleshooting script to collect important information from a Windows machine. See more about it here; https://learn.microsoft.com/en-us/troubleshoot/windows-client/windows-troubleshooters/introduction-to-troubleshootingscript-toolset-tss
