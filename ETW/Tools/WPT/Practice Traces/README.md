@@ -32,7 +32,7 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 - [**HighCPUUsage.etl**](https://github.com/itoleck/WindowsPerformance/issues) - Can you find the cause of high CPU usage?
 
-- [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources?
+- [**HighCPUPlusOtherIssues.etl**](https://github.com/itoleck/WindowsPerformance/issues/1) - What process/es are using CPU, Is it causing any other issues with resources? The files in the folder /symache can be copied to the symcache folder of your analysis machine to help with the analysis. For more information on configuring symbols see; https://learn.microsoft.com/en-us/windows-hardware/test/wpt/load-symbols-or-configure-symbol-paths
 
 - **CPUUsageSpikesInteresting.etl** - Can you find what is causing the CPU to spike at some times? What is happening at this time? Can you find out more process, file, or version information about the cause?
 
