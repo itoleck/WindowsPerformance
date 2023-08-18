@@ -46,7 +46,7 @@ If you would like to comment your findings use the (<https://github.com/itoleck/
 
 ### Memory Related
 
-- **MemoryUsage1.etl** - Can you find the reason for memory usage spikes? Are the spikes cause for concern? Can you view the stack for the memory allocations? If so, how? If not, why not?
+- [**MemoryUsage1.etl**](https://github.com/itoleck/WindowsPerformance/issues/9) - Can you find the reason for memory usage spikes? Are the spikes cause for concern? Can you view the stack for the memory allocations? If so, how? If not, why not?
 
 ### Other issues
 
