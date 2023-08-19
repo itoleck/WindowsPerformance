@@ -16,7 +16,7 @@ To open the System Configuration, open a trace and go to the Menu->Trace->System
 
 ### <a id="understand2"></a>Understand the Problem ###
 
-Make sure that you have narrowed down the issue to a time, reproduction steps, hardware resource/s, software/App if possible. Collect just the information needed using wpr.exe, wprui.exe or xperf.exe. Remember that ETW traces can log a lot of events very quickly, even up to multiple gigabytes in a few seconds. Some example trace commands are available [here](/itoleck/WindowsPerformance/blob/main/ETW/Tools/WPT/WPR/CaptureScripts) 
+Make sure that you have narrowed down the issue to a time, reproduction steps, hardware resource/s, software/App if possible. Collect just the information needed using wpr.exe, wprui.exe or xperf.exe. Remember that ETW traces can log a lot of events very quickly, even up to multiple gigabytes in a few seconds. Some example trace commands are available [here](/ETW/Tools/WPT/WPR/CaptureScripts/) 
 
 Example, if the machine is experiencing a storage performance issue trace the storage related providers; DiskIO, FileIO, Minifilter IO Activity. Do not capture unneccessary information, GPU, HTML, Audio/Video.
 
