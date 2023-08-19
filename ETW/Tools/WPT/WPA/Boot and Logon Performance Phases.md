@@ -1,12 +1,14 @@
 # Boot trace phases
 
-Wpa.exe boot analysis
+## Wpa.exe boot analysis
 
 ![WPA Boot Phases](/ETW/Tools/WPT/WPA/images/bootphasegraph.png)
 
 If the Boot Phases graph is unavailable, use the below information to find the durations of each boot phase.
 
-Alternativley, the [ETLReports](https://github.com/itoleck/ETLReports) tool can be used to create a .csv file and .png file of the boot phase information. The Windows Performance Toolkit application, xperf.exe can also create an .xml report using actions. See **xperf.exe -help processing** for more information.
+Alternativley, the [ETLReports](https://github.com/itoleck/ETLReports) tool can be used to create a .csv file and .png file of the boot phase information. The Windows Performance Toolkit application, xperf.exe can also create an .xml report using actions. See **xperf.exe -help processing** for more information. Wpaexporter.exe also from the Windows Performance Toolkit can also be used to export data from .etl traces. See **wpaexporter.exe /?** for more information.
+
+* ETLReports always outputs to formatted .csv format for easy digestion into other systems.
 
 .\etlreports.exe --infile:<.etl file path> --processor:bootphases --outfile:<output directory>
 
