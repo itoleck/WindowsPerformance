@@ -11,7 +11,7 @@
 The System Configuration window has all kinds of information about the machine and conditions of the trace. This is the first place to start in any investigation of an .etl file with Windows Performance Analyzer(WPA.exe).
 To open the System Configuration, open a trace and go to the Menu->Trace->System Configuration.
 
-![WPA System Configuration](SystemConfiguration.png)
+![WPA System Configuration](/ETW/Tools/WPT/WPA/images/SystemConfiguration.png)
 
 
 ### <a id="understand2"></a>Understand the Problem ###
