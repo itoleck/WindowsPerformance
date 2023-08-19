@@ -2,7 +2,7 @@
 
 Wpa.exe boot analysis
 
-![WPA Boot Phases](bootphasegraph.png)
+![WPA Boot Phases](/ETW/Tools/WPT/WPA/images/bootphasegraph.png)
 
 If the Boot Phases graph is unavailable, use the below information to find the durations of each boot phase.
 
@@ -12,7 +12,7 @@ Alternativley, the [ETLReports](https://github.com/itoleck/ETLReports) tool can 
 
 Example ETLReports output:
 
-![bootphasesreportcsv](bootphasesreportcsv.png) ![bootphasesgraph](bootphasesgraph.png)
+![bootphasesreportcsv](/ETW/Tools/WPT/WPA/images/bootphasesreportcsv.png) ![bootphasesgraph](/ETW/Tools/WPT/WPA/images/bootphasesgraph.png)
 
 |       **Phase**      | **Normal Duration** | **Start of boot phase** | **End of boot phase** | **Notes** |
 | ---------------------|---------------------|-------------------------|-----------------------|-----------|
