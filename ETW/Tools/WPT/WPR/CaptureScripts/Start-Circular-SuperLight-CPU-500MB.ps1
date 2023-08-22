@@ -5,7 +5,7 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
-#Set the CPU profiling slower, 1s, still good enough for general CPU usage. Max is 10,000,000 (10s).
+#Set the CPU profiling slower, 1s, still good enough for general CPU usage. Max is 10,000,000 (10s). Default 10,000 (1ms)
 wpr.exe -setprofint 1000000
 wpr.exe -start ..\Profiles\General-CPU-Light-Circular-500MB.wprp
 
