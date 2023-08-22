@@ -11,6 +11,8 @@ If (!(Test-Path $env:TEMP)) {
     New-Item -Path $env:TEMP
 }
 
+#Set the CPU profiling slower, 1s, still good enough for general CPU usage. Max is 10,000,000 (10s).
+wpr.exe -setprofint 100000
 wpr.exe -boottrace -addboot ..\Profiles\Boot-Basic-SuperLight.wprp -filemode -recordtempto $env:TEMP
 
 Write-Host "Please reboot the machine, login and run the Save-BootTrace.ps1 script as an administrator."
