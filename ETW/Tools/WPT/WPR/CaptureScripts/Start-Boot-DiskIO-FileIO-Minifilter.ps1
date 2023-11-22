@@ -1,7 +1,9 @@
-#requires –RunAsAdministrator
-
 #2022 Chad Schultz
 #https://github.com/itoleck/WindowsPerformance
+
+#Administrator access is not needed if your account is member of the 'Performance Log Users' local group.
+#Comment below requires statement if this is the case.
+#Requires -RunAsAdministrator
 
 Write-Host "Start DiskIO, FileIO and Minifilter Light Boot capture."
 Write-Host "After rebooting the machine run the save script (Save-BootTrace.ps1) to stop the capture and save the file."

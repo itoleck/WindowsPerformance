@@ -27,6 +27,22 @@
           <Keyword Value="SampledProfile"/>
           <Keyword Value="ThreadPriority"/>
         </Keywords>
+        <Stacks>
+            <Stack Value="SampledProfile"/>
+            <Stack Value="CSwitch"/>
+            <Stack Value="ReadyThread"/>
+            <Stack Value="FileCreate"/>
+            <Stack Value="FileClose"/>
+            <Stack Value="ThreadDCEnd" />
+            <!-- Additional stacks that enhance Wait Analysis -->
+            <Stack Value="ThreadCreate" />
+            <Stack Value="ThreadPoolCallbackStart" />
+            <Stack Value="ThreadPoolCallbackEnqueue" />
+            <Stack Value="ThreadPoolCallbackDequeue" />
+            <Stack Value="ThreadPoolCallbackStop" />
+            <Stack Value="KernelQueueEnqueue" />
+            <Stack Value="KernelQueueDequeue" />
+        </Stacks>
       </SystemProvider>
 
     <EventProvider Id="EventProvider_Microsoft-Windows-Kernel-Processor-Power"
