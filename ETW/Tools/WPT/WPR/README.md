@@ -17,3 +17,7 @@ To run the wpr.exe and wprui.exe applications your account needs the rights of a
 If your account does not have all of the rights you will receive the following error: "Not all privileges or groups referenced are assigned to the caller"
 
 To check your account rights use secpol.msc
+
+For a list of available [Kernel event keywords - .\SystemProviderKeywords.md](./SystemProviderKeywords.md)
+
+For a list of available [Stack Events - .\StackEnumerations.md](./StackEnumerations.md)

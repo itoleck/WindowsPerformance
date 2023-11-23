@@ -4,33 +4,33 @@
     <Profiles>
       <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
             <BufferSize Value="1024"/>
-            <Buffers Value="3072"/>
+            <Buffers Value="500"/>
           </SystemCollector>
-
-      <EventCollector Id="GeneralEventCollector" Name="GeneralEventCollector">
-        <BufferSize Value="1024"/>
-        <Buffers Value="1024"/>
-      </EventCollector>
 
       <SystemProvider Id="GeneralSystemProvider">
         <Keywords>
-          <Keyword Value="CpuConfig"/>
-          <Keyword Value="CSwitch"/>
-          <Keyword Value="DPC"/>
-          <Keyword Value="Drivers"/>
-          <Keyword Value="HardFaults"/>
-          <Keyword Value="IdealProcessor"/>
+          <Keyword Value="WDFDPC"/>
+          <Keyword Value="WDFInterrupt"/>
           <Keyword Value="Interrupt"/>
-          <Keyword Value="KernelQueue"/>
-          <Keyword Value="Loader"/>
-          <Keyword Value="ProcessCounter"/>
+          <Keyword Value="ClockInterrupt"/>
+          <Keyword Value="DPC"/>
+          <Keyword Value="DPCQueue"/>
+          <Keyword Value="Drivers"/>
+          <Keyword Value="CpuConfig"/>
           <Keyword Value="ProcessThread"/>
-          <Keyword Value="ReadyThread"/>
+          <Keyword Value="InterProcessorInterrupt"/>
           <Keyword Value="SampledProfile"/>
+          <Keyword Value="CSwitch"/>
+          <Keyword Value="IdealProcessor"/>
+          <Keyword Value="Loader"/>
+          <Keyword Value="ReadyThread"/>
           <Keyword Value="ThreadPriority"/>
         </Keywords>
         <Stacks>
             <Stack Value="CSwitch"/>
+            <Stack Value="DpcEnqueue"/>
+            <Stack Value="DpcExecute"/>
+            <Stack Value="InterProcessorInterrupt"/>
             <Stack Value="ReadyThread"/>
             <Stack Value="FileCreate"/>
             <Stack Value="FileClose"/>
@@ -47,13 +47,8 @@
         </Stacks>
       </SystemProvider>
 
-    <EventProvider Id="EventProvider_Microsoft-Windows-Kernel-Processor-Power"
-                    Name="Microsoft-Windows-Kernel-Processor-Power"
-                    NonPagedMemory="true">
-    </EventProvider>
-
       <Profile Id="GeneralCircularProfile.Verbose.Memory"
-               Description="4GBCircuarMemoryGeneralCPUThreadDirectorDriversVerboseCircularProfile"
+               Description="4GBVerboseKernelCPUGeneralCircularProfile"
                DetailLevel="Verbose"
                LoggingMode="Memory"
                Name="GeneralCircularProfile">
@@ -62,16 +57,11 @@
           <SystemCollectorId Value="GeneralSystemCollector">
             <SystemProviderId Value="GeneralSystemProvider"/>
           </SystemCollectorId>
-            <EventCollectorId Value="GeneralEventCollector">
-              <EventProviders>
-                <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Processor-Power"/>
-              </EventProviders>
-          </EventCollectorId>
         </Collectors>
       </Profile>
 
       <Profile Id="GeneralCircularProfile.Verbose.File"
-               Description="4GBCircuarMemoryGeneralCPUThreadDirectorDriversVerboseCircularProfile"
+               Description="4GBVerboseFileKernelCPUGeneralProfile"
                DetailLevel="Verbose"
                LoggingMode="File"
                Name="GeneralCircularProfile">
@@ -80,11 +70,6 @@
           <SystemCollectorId Value="GeneralSystemCollector">
             <SystemProviderId Value="GeneralSystemProvider"/>
           </SystemCollectorId>
-          <EventCollectorId Value="GeneralEventCollector">
-              <EventProviders>
-                <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Processor-Power"/>
-              </EventProviders>
-          </EventCollectorId>
         </Collectors>
       </Profile>
       

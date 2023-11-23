@@ -31,7 +31,7 @@ param(
     )
 
     $FilePath = $filePath.TrimEnd("\")
-    if (-not(Test-Path $FilePath)) {Write-Host "Bad Path";Exit}
+    if (-not(Test-Path $FilePath)) {Write-Output "Bad Path";Exit}
 
     $stopwatch = [system.diagnostics.stopwatch]::StartNew()
 
@@ -43,5 +43,5 @@ param(
 
     $elapsed = ($stopwatch.ElapsedTicks / 10000).ToString()
     $totalbytes = ($FileCount * $FileSize)
-    Write-Host "Elasped ms: $elapsed to create $FileCount files of size $fileSize"
-    Write-Host "Total bytes written: $totalbytes"
+    Write-Output "Elasped ms: $elapsed to create $FileCount files of size $fileSize"
+    Write-Output "Total bytes written: $totalbytes"

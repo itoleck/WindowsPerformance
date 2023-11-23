@@ -5,6 +5,13 @@
 #Comment below requires statement if this is the case.
 #Requires -RunAsAdministrator
 
+Write-Output "Starting light general capture with TCP events."
+Pause
+
+wpr.exe -setprofint 100000
 wpr.exe -start ..\Profiles\General-CPU-DiskIO-WS-TCPIP-Light-Circular-500MB.wprp
 
-Write-Host ("To stop tracing run :wpr.exe -stop <filename.etl>") -ForegroundColor Green
+#Set profile interval back to default
+wpr.exe -setprofint 10000
+
+Write-Host ("To stop tracing run :wpr.exe -skipPdbGen -stop <filename.etl>") -ForegroundColor Green
