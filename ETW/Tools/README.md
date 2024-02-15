@@ -14,7 +14,7 @@
 
 - [Network Monitor 3](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/network-monitor-3#download-and-support-information) - View .etl network traces.
 
-- [etl2pcapng](https://github.com/microsoft/etl2pcapng) - Open source tool to convert .etl network traces to WireShark format.
+- [etl2pcapng](https://github.com/microsoft/etl2pcapng) - Open source tool to convert .etl network traces to WireShark format. Built in to Windows in pktmon.exe.
 
 - [Microsoft.Windows.EventTracing.Processing NuGet package](https://github.com/microsoft/eventtracing-processing) - Create .Net applications that can read and utilize Event Trace Logs (.etl).
 
@@ -43,6 +43,8 @@
 - Pktmon.exe - Another built-in network packet capture, has built-in etl2pcapng for converting .etl(Windows) to .pcapng(WireShark).
 
 ## Other Tools
+
+- <https://github.com/itoleck/ETLReports> - ETLReports, my .etl trace file exporter to .csv.
 
 - <https://github.com/itoleck/ETLSmasher> - ETLSmasher, my .etl trace file re-logger.
 

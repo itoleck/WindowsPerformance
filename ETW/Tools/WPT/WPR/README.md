@@ -21,3 +21,5 @@ To check your account rights use secpol.msc
 For a list of available [Kernel event keywords - .\SystemProviderKeywords.md](./SystemProviderKeywords.md)
 
 For a list of available [Stack Events - .\StackEnumerations.md](./StackEnumerations.md)
+
+For more details on [Kernel event keywords - .\WPR Profile Keyword Details.md](./WPR%20Profile%20Keyword%20Details.md).
