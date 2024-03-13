@@ -22,9 +22,9 @@
 |**FileIOInit**|File API events. Needs other keywords to be useful. (FileIO, ProcessThread)|FileIo: Create, FileIo: Close, FileIo: Cleanup, FileIo: QueryInfo, FileIo: DirEnum, FileIo: FSCTL, FileIo: Write, FileIo: Read, FileIo: QuerySecurity, FileIo: SetInfo, FileIo: QueryEA, FileIo: Flush, FileIo: Rename, FileIo: RenamePath, FileIo: Delete, FileIo: DirNotify, FileIo: DeletePath, FileIo: SetSecurity|File I/O|
 |**Filename**|File API Events. Same events as Drivers keyword.|[FileIO]Filename: Rundown, Filename: Create, Filename: Delete|None|
 |**FilterIO**|File/Mini Filter events. Needs other keywords to be useful. (FileIO, FileIOInit, FilterIOFailure, FilterIOFastIO, FilterIOInit, ProcessThread)|[FileIO]FileIo [Provider]|Storage->Mini-Filter Delays|
-|**FilterIOFailure**|
-|**FilterIOFastIO**|
-|**FilterIOInit**|
+|**FilterIOFailure**|Helps with Storage->Mini-Filter Delays|
+|**FilterIOFastIO**|Helps with Storage->Mini-Filter Delays|
+|**FilterIOInit**|Helps with Storage->Mini-Filter Delays|
 |**FootPrint**|Memory usage information. Very high amount of events and data captured, 100s of MB per second or more. Contains all changed memory pages while trace is running.|[PageFault]Memory: PageInMemory, Session: End Rundown, Memory: MemInfoExWS, Memory: MemInfo, Memory: KeMemUsage, Memory: MemInfoExSessionWS, [Pool]Pool: BigPoolSnap End Rundown, Pool: PoolSnap End Rundown, Pool: BigPoolSnap Session End Rundown, Pool: PoolSnap Session End Rundown|Memory->Memory Utilization, Memory->Resident Set, Memory->Total Commit, Memory->Virtual Memory Snapshots|
 |**KeClock**|Clock information|[Perfinfo]Clock: Dynamic Tick Veto, Clock: Mode Switch, Clock: Time Update|None|
 |**Handle**|Handle information|[Object]Object [Provider]|Memory->Handles|

@@ -13,6 +13,6 @@ If (!(Test-Path $env:TEMP)) {
     New-Item -Path $env:TEMP
 }
 
-wpr.exe -boottrace -addboot ..\Profiles\Boot-DiskIO-FileIO.wprp -addboot Minifilter -filemode -recordtempto $env:TEMP
+wpr.exe -boottrace -addboot ..\Profiles\Boot-DiskIO-FileIO-Minifilter.wprp -addboot Minifilter -filemode -recordtempto $env:TEMP
 
 Write-Output "Please reboot the machine, login and run the Save-BootTrace.ps1 script as an administrator."

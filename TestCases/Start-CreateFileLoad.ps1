@@ -1,6 +1,8 @@
 #2022 Chad Schultz
 #https://github.com/itoleck/WindowsPerformance
 
+#requires -Version 5 -PSEdition Desktop
+
 <#
         .SYNOPSIS
         Create files in a path and show time taken.
@@ -13,6 +15,7 @@
         Folder path to write files
         .PARAMETER FileSize
         Size of each file to write in bytes
+        .PARAMETER ShowTemps
         .OUTPUTS
         String
         .EXAMPLE
@@ -27,7 +30,8 @@
 param(
       [Parameter(Mandatory=$true)][int] $FileCount,
       [Parameter(Mandatory=$true)][string] $FilePath,
-      [Parameter(Mandatory=$true)][int] $FileSize
+      [Parameter(Mandatory=$true)][int] $FileSize,
+      [Parameter(Mandatory=$false)][switch] $ShowTemps
     )
 
     $FilePath = $filePath.TrimEnd("\")
@@ -36,6 +40,12 @@ param(
     $stopwatch = [system.diagnostics.stopwatch]::StartNew()
 
     for ($index=1;$index -le $FileCount;$index++) {
+
+        if ( ($ShowTemps) -and (($index -eq 1) -or ($index -eq $FileCount)) ) {
+          Write-Output "Disk Temps @ file creation #$index"
+          Get-PhysicalDisk | Get-StorageReliabilityCounter | Select-Object DeviceID, Temperature, TemperatureMax
+        }
+
         $fullpath = $FilePath + "\" + $index.ToString() + ".tmp"
         $arglist = "file createnew " + $fullpath + " " + $FileSize.ToString()
         Start-Process -FilePath "fsutil.exe" -ArgumentList $arglist
@@ -45,3 +55,4 @@ param(
     $totalbytes = ($FileCount * $FileSize)
     Write-Output "Elasped ms: $elapsed to create $FileCount files of size $fileSize"
     Write-Output "Total bytes written: $totalbytes"
+    Write-Output "Remember to delete the test files at: $FilePath"

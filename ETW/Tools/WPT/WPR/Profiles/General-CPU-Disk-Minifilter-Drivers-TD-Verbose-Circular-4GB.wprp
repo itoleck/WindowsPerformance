@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone='yes'?>
+
+<WindowsPerformanceRecorder Version="1.0" Author="Chad Schultz" Team="Chad Schultz" Comments="Basic resource tracing using a Circular log" Company="" Copyright="">
+    <Profiles>
+      <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
+            <BufferSize Value="1024"/>
+            <Buffers Value="3072"/>
+          </SystemCollector>
+
+      <EventCollector Id="GeneralEventCollector" Name="GeneralEventCollector">
+        <BufferSize Value="1024"/>
+        <Buffers Value="1024"/>
+      </EventCollector>
+
+      <SystemProvider Id="GeneralSystemProvider">
+        <Keywords>
+          <Keyword Value="CpuConfig"/>
+          <Keyword Value="CSwitch"/>
+          <Keyword Value="DPC"/>
+          <Keyword Value="Drivers"/>
+          <Keyword Value="HardFaults"/>
+          <Keyword Value="FileIO"/>
+          <Keyword Value="FileIOInit"/>
+          <Keyword Value="FilterIO"/>
+          <Keyword Value="FilterIOFailure"/>
+          <Keyword Value="FilterIOFastIO"/>
+          <Keyword Value="FilterIOInit"/>
+          <Keyword Value="IdealProcessor"/>
+          <Keyword Value="Interrupt"/>
+          <Keyword Value="KernelQueue"/>
+          <Keyword Value="Loader"/>
+          <Keyword Value="ProcessCounter"/>
+          <Keyword Value="ProcessThread"/>
+          <Keyword Value="ReadyThread"/>
+          <Keyword Value="SampledProfile"/>
+          <Keyword Value="ThreadPriority"/>
+        </Keywords>
+        <Stacks>
+            <Stack Value="CSwitch"/>
+            <Stack Value="ReadyThread"/>
+            <Stack Value="FileCreate"/>
+            <Stack Value="FileClose"/>
+            <Stack Value="DiskWriteInit"/>
+            <Stack Value="SampledProfile"/>
+            <Stack Value="ThreadDCEnd" />
+            <!-- Additional stacks that enhance Wait Analysis -->
+            <Stack Value="ThreadCreate" />
+            <Stack Value="ThreadPoolCallbackStart" />
+            <Stack Value="ThreadPoolCallbackEnqueue" />
+            <Stack Value="ThreadPoolCallbackDequeue" />
+            <Stack Value="ThreadPoolCallbackStop" />
+            <Stack Value="KernelQueueEnqueue" />
+            <Stack Value="KernelQueueDequeue" />
+        </Stacks>
+      </SystemProvider>
+
+    <EventProvider Id="EventProvider_Microsoft-Windows-Kernel-Processor-Power"
+                    Name="Microsoft-Windows-Kernel-Processor-Power"
+                    NonPagedMemory="true">
+    </EventProvider>
+
+      <Profile Id="GeneralCircularProfile.Verbose.Memory"
+               Description="4GBCircuarMemoryGeneralCPUThreadDirectorDriversVerboseCircularProfile"
+               DetailLevel="Verbose"
+               LoggingMode="Memory"
+               Name="GeneralCircularProfile">
+        
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+            <EventCollectorId Value="GeneralEventCollector">
+              <EventProviders>
+                <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Processor-Power"/>
+              </EventProviders>
+          </EventCollectorId>
+        </Collectors>
+      </Profile>
+
+      <Profile Id="GeneralCircularProfile.Verbose.File"
+               Description="4GBCircuarMemoryGeneralCPUThreadDirectorDriversVerboseCircularProfile"
+               DetailLevel="Verbose"
+               LoggingMode="File"
+               Name="GeneralCircularProfile">
+
+        <Collectors>
+          <SystemCollectorId Value="GeneralSystemCollector">
+            <SystemProviderId Value="GeneralSystemProvider"/>
+          </SystemCollectorId>
+          <EventCollectorId Value="GeneralEventCollector">
+              <EventProviders>
+                <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Processor-Power"/>
+              </EventProviders>
+          </EventCollectorId>
+        </Collectors>
+      </Profile>
+      
+    </Profiles>
+</WindowsPerformanceRecorder>

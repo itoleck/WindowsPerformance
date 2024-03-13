@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone='yes'?>
+
+<WindowsPerformanceRecorder Version="1.0" Author="Chad Schultz" Team="Chad Schultz"
+                            Comments="Medium resource boot tracing" Company="" Copyright="">
+  <Profiles>
+
+    <SystemCollector Id="GeneralSystemCollector" Name="GeneralSystemCollector">
+      <BufferSize Value="1024"/>
+      <Buffers Value="500"/>
+    </SystemCollector>
+
+    <EventCollector Id="GeneralEventCollector" Name="GeneralEventCollector">
+      <BufferSize Value="1024"/>
+      <Buffers Value="300"/>
+    </EventCollector>
+
+    <SystemProvider Id="GeneralSystemProvider">
+      <Keywords>
+        <Keyword Value="CpuConfig"/>
+        <Keyword Value="CSwitch"/>
+        <Keyword Value="DiskIO"/>
+        <Keyword Value="DPC"/>
+        <Keyword Value="Drivers"/>
+        <Keyword Value="FileIO"/>
+        <Keyword Value="FileIOInit"/>
+        <Keyword Value="FilterIO"/>
+        <Keyword Value="FilterIOFailure"/>
+        <Keyword Value="FilterIOFastIO"/>
+        <Keyword Value="FilterIOInit"/>
+        <Keyword Value="IdealProcessor"/>
+        <Keyword Value="Interrupt"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="MemoryInfo"/>
+        <Keyword Value="ProcessCounter"/>
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="SampledProfile"/>
+        <Keyword Value="ThreadPriority"/>
+      </Keywords>
+    </SystemProvider>
+
+    <EventProvider Id="EventProvider_Microsoft-Windows-GroupPolicy"
+                     Name="Microsoft-Windows-GroupPolicy"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Winlogon"
+                     Name="Microsoft-Windows-Winlogon"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Kernel-PnP"
+                     Name="Microsoft-Windows-Kernel-PnP"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Kernel-Boot"
+                     Name="Microsoft-Windows-Kernel-Boot"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Services"
+                     Name="Microsoft-Windows-Services"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Services-Svchost"
+                     Name="Microsoft-Windows-Services-Svchost"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Win32k"
+                     Name="Microsoft-Windows-Win32k"
+                     NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Shell-Core"
+                         Name="Microsoft-Windows-Shell-Core"
+                         NonPagedMemory="true">
+    </EventProvider>
+    <EventProvider Id="EventProvider_Microsoft-Windows-Subsys-SMSS"
+                         Name="Microsoft-Windows-Subsys-SMSS"
+                         NonPagedMemory="true">
+    </EventProvider>
+    <Profile
+        Description="Boot: Basic resource trace"
+        DetailLevel="Light"
+        Id="BasicBoot.Light.File"
+        LoggingMode="File"
+        Name="BasicBoot">
+      
+      <Collectors>
+        <SystemCollectorId Value="GeneralSystemCollector">
+          <SystemProviderId Value="GeneralSystemProvider"/>
+        </SystemCollectorId>
+
+        <EventCollectorId Value="GeneralEventCollector">
+          <EventProviders>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-GroupPolicy"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Winlogon"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-PnP"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Boot"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Services"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Services-Svchost"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Shell-Core"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Subsys-SMSS"/>
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+      
+    </Profile>
+
+<Profile
+        Description="Boot: Basic verbose resource trace"
+        DetailLevel="Verbose"
+        Id="BasicBootVerbose.Verbose.File"
+        LoggingMode="File"
+        Name="BasicBootVerbose">
+      
+      <Collectors>
+        <SystemCollectorId Value="GeneralSystemCollector">
+          <SystemProviderId Value="GeneralSystemProvider"/>
+        </SystemCollectorId>
+
+        <EventCollectorId Value="GeneralEventCollector">
+          <EventProviders>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-GroupPolicy"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Winlogon"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-PnP"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Kernel-Boot"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Services"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Services-Svchost"/>
+            <EventProviderId Value="EventProvider_Microsoft-Windows-Shell-Core"/>
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+      
+    </Profile>
+
+  </Profiles>
+
+    <TraceMergeProperties>
+        <TraceMergeProperty  Id="Default" Name="Default" Base="">
+            <DeletePreMergedTraceFiles Value="true"/>
+            <FileCompression Value="true"/>
+        </TraceMergeProperty>
+    </TraceMergeProperties>
+
+</WindowsPerformanceRecorder>
