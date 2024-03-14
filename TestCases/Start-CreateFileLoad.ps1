@@ -1,7 +1,7 @@
 #2022 Chad Schultz
 #https://github.com/itoleck/WindowsPerformance
 
-#requires -Version 5 -PSEdition Desktop
+#requires -Version 5 -PSEdition Desktop -RunAsAdministrator
 
 <#
         .SYNOPSIS
@@ -43,7 +43,7 @@ param(
 
         if ( ($ShowTemps) -and (($index -eq 1) -or ($index -eq $FileCount)) ) {
           Write-Output "Disk Temps @ file creation #$index"
-          Get-PhysicalDisk | Get-StorageReliabilityCounter | Select-Object DeviceID, Temperature, TemperatureMax
+          Write-Output (Get-PhysicalDisk | Get-StorageReliabilityCounter | Select-Object DeviceID, Temperature, TemperatureMax | Format-Table -AutoSize)
         }
 
         $fullpath = $FilePath + "\" + $index.ToString() + ".tmp"
