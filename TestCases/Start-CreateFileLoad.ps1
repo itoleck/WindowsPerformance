@@ -34,6 +34,9 @@ param(
       [Parameter(Mandatory=$false)][switch] $ShowTemps
     )
 
+    Write-Host "In some cases this test can cause the machine to lockup and crash with a large number of files. Ctrl-C to end now." -ForegroundColor Red 
+    Pause
+
     $FilePath = $filePath.TrimEnd("\")
     if (-not(Test-Path $FilePath)) {Write-Output "Bad Path";Exit}
 
