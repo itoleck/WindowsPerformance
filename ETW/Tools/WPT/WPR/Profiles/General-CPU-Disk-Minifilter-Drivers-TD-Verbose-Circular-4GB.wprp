@@ -16,6 +16,7 @@
         <Keywords>
           <Keyword Value="CpuConfig"/>
           <Keyword Value="CSwitch"/>
+          <Keyword Value="DiskIO"/>
           <Keyword Value="DPC"/>
           <Keyword Value="Drivers"/>
           <Keyword Value="HardFaults"/>
