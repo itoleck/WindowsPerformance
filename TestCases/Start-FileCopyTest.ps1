@@ -80,6 +80,10 @@ Function IsDestinationFolderAvailable() {
     }
 }
 
+function updateprogress($percent) {
+    Write-Progress -Activity "Loading profile" -Status "$percent% Complete:" -PercentComplete $percent
+}
+
 IsFolderCorrectFileCount
 IsFolderFilesCorrectSize
 IsDestinationFolderAvailable
@@ -102,6 +106,11 @@ if ( ($script:IsFileCountGood) -and ($script:IsFileSizesGood) -and ($script:IsDe
     do {
         Copy-Item -LiteralPath $SourcePath -Destination $DestinationPath -Recurse -Force
         $script:TotalIterations = $script:TotalIterations + 1
+        $percentcompleted = ($script:Stopwatch.ElapsedMilliseconds / $TimeFrame.TotalMilliseconds * 100)
+        if ($percentcompleted -gt 100) {
+            $percentcompleted = 100
+        }
+        updateprogress $percentcompleted
     } while (
         $script:Stopwatch.ElapsedMilliseconds -lt $TimeFrame.TotalMilliseconds
     )
