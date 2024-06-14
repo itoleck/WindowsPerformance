@@ -14,7 +14,12 @@ trap {
     Write-Error "An error occurred in the script, exiting."
 }
 
+function updateprogress($percent) {
+    Write-Progress -Activity "Loading profile" -Status "$percent% Complete:" -PercentComplete $percent
+}
+
 if ($FolderPath.Exists) {
+    $script:Stopwatch = [system.diagnostics.stopwatch]::StartNew()
     $folderfixed = ($FolderPath.FullName.TrimEnd("\"))
     $l = $FileSizeBytes
     $str = ''
@@ -22,11 +27,17 @@ if ($FolderPath.Exists) {
     1..($l - 2) | ForEach-Object {
         $str += $cs | Get-Random
     }
+    
     Write-Verbose $str
 
     for ($i = 0; $i -lt $FileCount; $i++) {
         $str|Set-Content -LiteralPath $folderfixed\$i.tmp -Encoding ascii -Force
+        updateprogress ($i / $FileCount * 100)
     }
+
+    $script:Stopwatch.stop()
+
 } else {
     Write-Verbose "Path ($FolderPath) not found."
 }
+Write-Output "$FileCount files created in $($script:Stopwatch.ElapsedMilliseconds) (ms)"
