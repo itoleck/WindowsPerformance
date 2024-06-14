@@ -122,11 +122,11 @@ if ( ($script:IsFileCountGood) -and ($script:IsFileSizesGood) -and ($script:IsDe
         Write-Output (Get-PhysicalDisk | Get-StorageReliabilityCounter | Select-Object DeviceID, Temperature, TemperatureMax | Sort-Object | Format-Table -AutoSize)
     }
 
+    $avgiteration = ($script:Stopwatch.ElapsedMilliseconds / $script:TotalIterations)
+
+    Write-Output "Average file copy iteration time for $FileCount $FileSize byte files: $avgiteration (ms)"
+    Write-Output "Test ran for $($script:Stopwatch.ElapsedMilliseconds) milliseconds and $script:TotalIterations iterations."
+
 } else {
     Write-Output "Script did not run because of a bad setup. Check parameters and source and destination folders. Enable -Verbose for more info."
 }
-
-$avgiteration = ($script:Stopwatch.ElapsedMilliseconds / $script:TotalIterations)
-
-Write-Output "Average file copy iteration time for $FileCount $FileSize byte files: $avgiteration (ms)"
-Write-Output "Test ran for $($script:Stopwatch.ElapsedMilliseconds) milliseconds and $script:TotalIterations iterations."
