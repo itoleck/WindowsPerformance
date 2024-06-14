@@ -15,7 +15,7 @@ trap {
 }
 
 function updateprogress($percent) {
-    Write-Progress -Activity "Loading profile" -Status "$percent% Complete:" -PercentComplete $percent
+    Write-Progress -Activity "Creating Files" -Status "$percent% Complete:" -PercentComplete $percent
 }
 
 if ($FolderPath.Exists) {

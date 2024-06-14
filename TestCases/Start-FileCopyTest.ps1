@@ -81,7 +81,7 @@ Function IsDestinationFolderAvailable() {
 }
 
 function updateprogress($percent) {
-    Write-Progress -Activity "Loading profile" -Status "$percent% Complete:" -PercentComplete $percent
+    Write-Progress -Activity "Copying Files" -Status "$percent% Complete:" -PercentComplete $percent
 }
 
 IsFolderCorrectFileCount
