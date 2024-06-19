@@ -41,6 +41,7 @@ param(
 $ErrorActionPreference = 'Stop'
 trap {
     Write-Error "An error occurred in the script, exiting."
+    Write-Error $PSItem.ToString()
 }
 
 $script:TotalTicks = 0
@@ -81,6 +82,7 @@ Function IsDestinationFolderAvailable() {
 }
 
 function updateprogress($percent) {
+    if ($percent -gt 100) { $percent = 100 }
     Write-Progress -Activity "Copying Files" -Status "$percent% Complete:" -PercentComplete $percent
 }
 
