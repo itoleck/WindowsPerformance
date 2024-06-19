@@ -129,6 +129,9 @@ if ( ($script:IsFileCountGood) -and ($script:IsFileSizesGood) -and ($script:IsDe
     Write-Output "Average file copy iteration time for $FileCount $FileSize byte files: $avgiteration (ms)"
     Write-Output "Test ran for $($script:Stopwatch.ElapsedMilliseconds) milliseconds and $script:TotalIterations iterations."
 
+    $comp = Get-CimInstance -ClassName Win32_ComputerSystem | Select-Object Name, Model, Manufacturer, NumberOfLogicalProcessors
+    Write-Output $comp | Format-Table -AutoSize
+
 } else {
     Write-Output "Script did not run because of a bad setup. Check parameters and source and destination folders. Enable -Verbose for more info."
 }
