@@ -82,7 +82,7 @@ Function IsDestinationFolderAvailable() {
 }
 
 function updateprogress($percent) {
-    if ($percent -gt 100) { $percent = 100 }
+    if ($percent -gt 99) { $percent = 99 }
     Write-Progress -Activity "Copying Files" -Status "$percent% Complete:" -PercentComplete $percent
 }
 
